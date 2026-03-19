@@ -1,21 +1,66 @@
-MIT License
+# Brand Marketing Team License (BMTL-1.0)
 
-Copyright (c) 2026 n
+Copyright (c) 2026 Naman (@namanwtf) - https://github.com/namanwtf
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Permissions
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software with the following rights:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+✅ **Use** - Use the Software for any purpose (personal, commercial, educational)
+✅ **Modify** - Create derivative works and modifications
+✅ **Distribute** - Share the Software with others
+✅ **Sublicense** - Include in larger projects
+✅ **Sell** - Sell the Software or derivative works
+
+## Conditions (Mandatory)
+
+### 1. Attribution Requirement
+**ANY use, modification, or distribution MUST include:**
+
+```
+Powered by Brand Marketing Team
+Created by @namanwtf (https://github.com/namanwtf)
+Original: https://github.com/namanwtf/brand-marketing-team
+```
+
+**Placement requirements:**
+- **Modified versions**: Prominent attribution in README and documentation
+- **Commercial use**: Attribution in product/about page
+- **Internal use**: Attribution in internal documentation
+- **Sublicensed**: Attribution must carry to all derivatives
+
+### 2. Copyright Notice
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+### 3. Modification Documentation
+Any modifications must document:
+- What was changed
+- Original author credit preserved
+- Link to original repository
+
+### 4. No Endorsement
+You may not use the author's name or brand to endorse derivative works without written permission.
+
+## Warranty Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
+
+## Why This License?
+
+This license ensures:
+1. **Freedom** - You can use this for anything
+2. **Attribution** - Credit is mandatory, not optional
+3. **Transparency** - Modifications must be documented
+4. **Community** - Derivatives strengthen the ecosystem
+
+## Questions?
+
+Contact: @namanwtf on Twitter/GitHub
+
+---
+
+**By using this Software, you agree to these terms.**
+
+**Built with ❤️ by @namanwtf**
