@@ -1,223 +1,222 @@
+<div align="center">
+
 # 🚀 Brand Marketing Team
 
-> **The AI Marketing Team for Any Brand**  
-> Deploy a 24/7 autonomous marketing team that learns your brand and executes growth strategies.
+**Deploy a 24/7 AI Marketing Department in 60 seconds**
 
-[![GitHub stars](https://img.shields.io/github/stars/@samen namanwtf/brand-marketing-team?style=social)](https://github.com/@samen namanwtf/brand-marketing-team)
+[![GitHub stars](https://img.shields.io/github/stars/namanwtf/brand-marketing-team?style=social)](https://github.com/namanwtf/brand-marketing-team/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/namanwtf/brand-marketing-team?style=social)](https://github.com/namanwtf/brand-marketing-team/fork)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills: 25+](https://img.shields.io/badge/Skills-25+-green.svg)]()
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-blue.svg)]()
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-purple.svg)]()
+[![npm version](https://img.shields.io/npm/v/brand-marketing-team.svg)](https://www.npmjs.com/package/brand-marketing-team)
+
+</div>
 
 ---
 
 ## 🎯 What is This?
 
-**Brand Marketing Team** is an open-source AI agent framework that creates a complete virtual marketing department for any brand. Give it your brand details once, and it:
+Brand Marketing Team is an **open-source AI marketing framework** that deploys 10 specialized agents to handle your marketing 24/7. No agency fees. No delays. Just results.
 
-- ✅ Monitors competitors 24/7
-- ✅ Optimizes pricing dynamically  
-- ✅ Creates ad campaigns
-- ✅ Writes conversion-optimized copy
-- ✅ Tracks analytics & generates reports
-- ✅ Coordinates multi-channel growth
-
-**Built for:** Marketing teams, founders, agencies, and growth hackers who want AI teammates that actually *do* the work.
+Think of it as hiring a complete marketing department that never sleeps, never takes breaks, and costs $0/month.
 
 ---
 
-## 🌟 Why This is 10x Better
-
-| Feature | Other Tools | **Brand Marketing Team** |
-|---------|-------------|--------------------------|
-| **Brand Adaptation** | Generic templates | **Learns YOUR brand** via `brand-context.md` |
-| **Competitive Intel** | Manual research | **Real-time scraping** + WhatsApp alerts |
-| **Pricing** | Static rules | **Dynamic competitor-based optimization** |
-| **Copywriting** | Generic AI | **Brand-voice trained** + psychology frameworks |
-| **Autonomy** | Click-to-run | **24/7 autonomous monitoring** |
-| **Platform** | Single tool | **OpenClaw + Claude Code + Cursor** compatible |
-
----
-
-## 🚀 Quick Start (30 Seconds)
-
-### Step 1: Install
+## ⚡ Quick Start (60 Seconds)
 
 ```bash
-# Via npx (recommended)
-npx brand-marketing-team init
+# Install globally
+npm install -g brand-marketing-team
 
-# Or clone manually
-git clone https://github.com/@samen namanwtf/brand-marketing-team.git
+# Or use npx (no install needed)
+npx brand-marketing-team init my-brand
+
+# Follow the wizard
+cd my-brand
+npm run setup
+```
+
+That's it. Your AI marketing team is now awake and working.
+
+---
+
+## 🤖 Your 24/7 Marketing Team
+
+| Agent | Role | What It Does |
+|-------|------|--------------|
+| 🕵️ **Competitive Intel** | Intelligence | Monitors competitors 24/7, tracks prices, detects launches |
+| 💰 **Pricing Optimizer** | Strategy | Dynamic pricing based on competitor moves and demand |
+| 📝 **Copywriting** | Content | Creates conversion-optimized copy in your brand voice |
+| 🎯 **Meta Ads Optimizer** | Paid Ads | Automates Meta Ads campaigns with smart optimization |
+| 📊 **Analytics Dashboard** | Reporting | Real-time performance tracking and insights |
+| 🔄 **Page CRO** | Conversion | Landing page optimization and A/B testing |
+| 📧 **Email Sequences** | Lifecycle | Automated email flows for onboarding and retention |
+| 📱 **Social Content** | Social | Platform-optimized content for Instagram, LinkedIn, X |
+| 🧪 **Testing Framework** | Quality | Automated testing for all marketing initiatives |
+| ⚡ **Auto-Setup** | Onboarding | 60-second brand discovery and configuration |
+
+---
+
+## 🎬 Demo
+
+```bash
+# Start the entire marketing team
+npm start
+
+# Watch a competitor
+@competitive-intel watch competitor-a
+
+# Get pricing recommendation
+@pricing-optimizer recommend product-x
+
+# Create homepage copy
+@copywriting create homepage
+
+# Launch Meta Ads campaign
+@meta-ads-optimizer create campaign "Spring Sale"
+```
+
+---
+
+## ✨ Key Features
+
+### 🔥 **Real-Time Competitor Intelligence**
+- Monitors competitor prices every 30 minutes
+- Detects new product launches instantly
+- Sends WhatsApp/Telegram alerts for major changes
+- Tracks historical trends and patterns
+
+### 💡 **Dynamic Pricing Optimization**
+- Auto-recommends pricing based on competitor moves
+- Margin protection guardrails
+- A/B testing for price points
+- Seasonal calendar integration
+
+### 📝 **Brand-Voice Copywriting**
+- Learns your brand voice from your website
+- Applies psychology frameworks automatically
+- Creates copy for any channel (ads, email, social, web)
+- Multi-language support
+
+### 🎯 **Meta Ads Automation**
+- Auto-optimizes campaigns for ROAS
+- Creative fatigue detection
+- Smart budget scaling
+- Audience overlap management
+
+### 📱 **Multi-Platform Support**
+Works seamlessly across:
+- **OpenClaw** (primary)
+- **Claude Code** (Anthropic)
+- **Cursor** (IDE integration)
+- **GitHub Copilot** (code editor)
+
+---
+
+## 📦 Installation
+
+### Option 1: Global Installation
+```bash
+npm install -g brand-marketing-team
+brand-marketing-team init my-brand
+cd my-brand
+npm run setup
+```
+
+### Option 2: npx (No Install)
+```bash
+npx brand-marketing-team init my-brand
+cd my-brand
+npm run setup
+```
+
+### Option 3: Git Clone
+```bash
+git clone https://github.com/namanwtf/brand-marketing-team.git
 cd brand-marketing-team
-```
-
-### Step 2: Configure Your Brand
-
-```bash
-npx brand-marketing-team setup
-```
-
-This creates your `brand-context.md`:
-
-```markdown
-# Brand Context
-
-## Identity
-- **Brand Name:** Tecno Mobile
-- **Industry:** Consumer Electronics / Smartphones
-- **Target Audience:** 18-34, budget-conscious, gaming enthusiasts
-- **Price Range:** ₹8,000 - ₹35,000
-- **Key Markets:** India, Africa, Southeast Asia
-
-## Positioning
-- **Value Prop:** Big battery gaming phones at disruptive prices
-- **Key Differentiator:** 7000mAh+ batteries, 120Hz displays under ₹20k
-- **Brand Voice:** Bold, youth-centric, performance-focused
-- **Competitors:** Realme, Samsung M-series, Vivo T-series, Poco
-
-## Products
-- **Hero Product:** Pova 6 Pro (₹18,999, 7000mAh, 120Hz)
-- **Product Line:** Pova (gaming), Camon (camera), Spark (entry), Phantom (premium)
-
-## Marketing Channels
-- **Primary:** Meta Ads, Flipkart, Amazon
-- **Secondary:** Instagram, YouTube, influencer partnerships
-- **Messaging Focus:** Battery life, gaming performance, value-for-money
-```
-
-### Step 3: Deploy Your Team
-
-```bash
-# Start 24/7 monitoring
-npm run team:start
-
-# Or use individual agents
-npm run intel:watch
-npm run pricing:optimize
-npm run ads:manage
+npm install
+npm run setup
 ```
 
 ---
 
-## 🤖 Your AI Marketing Team
+## 🎮 Usage Examples
 
-### 1. 🕵️ Competitive Intelligence Agent
-**File:** `skills/competitive-intel/`
-
+### Example 1: Monitor Competitors
 ```bash
-@competitive-intel watch realme samsung vivo
-@competitive-intel alert on "price drop > 10%"
+# Start monitoring all competitors
+@competitive-intel watch all
+
+# Check specific competitor
+@competitive-intel check competitor-a
+
+# Get daily briefing
 @competitive-intel daily-brief
 ```
 
-**Features:**
-- Real-time Flipkart/Amazon price tracking
-- WhatsApp/Telegram alerts
-- Historical price charts
-- Competitor launch monitoring
-- Automatic daily briefings at 7 AM
-
-**Example Output:**
-```
-🚨 COMPETITIVE ALERT - March 19, 2025
-
-REALME P4 LITE LAUNCHED
-• Price: ₹14,999 (6GB+128GB)
-• Battery: 7000mAh (matches our Pova 6)
-• Threat: HIGH - Direct competitor in our segment
-
-RECOMMENDED ACTION:
-Consider temporary price match to ₹14,499 or bundle offer 
-with free gaming accessories.
-
-Your Pova 6 Position: Still superior (120Hz vs 90Hz display)
-```
-
-### 2. 💰 Pricing Optimizer Agent
-**File:** `skills/pricing-optimizer/`
-
+### Example 2: Optimize Pricing
 ```bash
+# Analyze current pricing
 @pricing-optimizer analyze
-@pricing-optimizer recommend pova-6
+
+# Get recommendation for product
+@pricing-optimizer recommend product-x
+
+# Enable auto-adjustment
 @pricing-optimizer auto-adjust --threshold 5%
 ```
 
-**Features:**
-- Dynamic pricing based on competitor moves
-- Margin protection rules
-- Festival/promotion calendar integration
-- A/B test pricing strategies
-- Automatic price match recommendations
-
-### 3. 📝 Copywriting Agent
-**File:** `skills/copywriting/`
-
+### Example 3: Create Marketing Copy
 ```bash
-@copywriting create landing-page "Pova 6 Launch"
+# Create homepage hero
+@copywriting create homepage-hero
+
+# Write landing page
+@copywriting create landing-page "Product Launch"
+
+# Optimize existing copy
 @copywriting optimize meta-ads --variant B
-@copywriting email-sequence welcome
 ```
 
-**Features:**
-- Brand-voice trained (reads your `brand-context.md`)
-- Psychology frameworks (scarcity, social proof, authority)
-- Hinglish options for Indian market
-- ₹X,999 pricing psychology
-- Battery/charging focus for mobile brands
-
-**Example:**
-```markdown
-# Pova 6 Landing Page Hero
-
-## Headline
-"Game All Day. Charge Once. Win Always."
-
-## Subheadline  
-"7000mAh Battery. 120Hz Display. Under ₹19,000.
-The Phone That Keeps Up With Your Ambition."
-
-## CTA
-"Claim Your Gaming Edge →"
-
-## Psychology Applied:
-- ✅ Specificity (7000mAh, 120Hz, ₹19k)
-- ✅ Outcome-focused ("Win Always")
-- ✅ Price anchoring ("Under ₹19,000")
-- ✅ Action-oriented CTA ("Claim" vs "Buy")
-```
-
-### 4. 📊 Analytics Dashboard Agent
-**File:** `skills/analytics-dashboard/`
-
+### Example 4: Meta Ads Campaign
 ```bash
-@analytics-dashboard generate daily
-@analytics-dashboard competitor share-of-voice
-@analytics-dashboard export ppt --weekly
-```
+# Create campaign
+@meta-ads-optimizer create campaign "Summer Sale"
 
-**Features:**
-- Competitor price history charts
-- Share-of-voice metrics
-- Automated PowerPoint reports
-- Daily/weekly/monthly summaries
-- Trend prediction
-
-### 5. 🎯 Meta Ads Optimizer
-**File:** `skills/meta-ads-optimizer/`
-
-```bash
-@meta-ads-optimizer create campaign "Pova 6 Launch"
+# Optimize performance
 @meta-ads-optimizer optimize --roas-target 2.5
-@meta-ads-optimizer creative-rotate
+
+# Scale winning ads
+@meta-ads-optimizer scale --budget-increase 20%
 ```
 
-**Features:**
-- Audience targeting for Tier-2/3 cities
-- Festival calendar integration (Diwali, Holi, IPL)
-- Creative fatigue detection
-- Automatic A/B testing
-- Budget scaling rules
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│              Brand Marketing Team                        │
+├─────────────────────────────────────────────────────────┤
+│                                                          │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────┐  │
+│  │ Competitive  │    │   Pricing    │    │  Copy    │  │
+│  │ Intelligence │◄──►│  Optimizer   │◄──►│ Writing  │  │
+│  └──────────────┘    └──────────────┘    └──────────┘  │
+│         │                   │                  │        │
+│         ▼                   ▼                  ▼        │
+│  ┌──────────────────────────────────────────────────┐  │
+│  │            Shared Brand Context                   │  │
+│  │         (Learned from your website)              │  │
+│  └──────────────────────────────────────────────────┘  │
+│         │                   │                  │        │
+│         ▼                   ▼                  ▼        │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────┐  │
+│  │  Meta Ads    │    │   Analytics  │    │   CRO    │  │
+│  │  Optimizer   │◄──►│  Dashboard   │◄──►│  Agent   │  │
+│  └──────────────┘    └──────────────┘    └──────────┘  │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -225,178 +224,160 @@ The Phone That Keeps Up With Your Ambition."
 
 ```
 brand-marketing-team/
-├── README.md
-├── brand-context.md              # YOUR brand details (generated)
-├── skills/
-│   ├── competitive-intel/        # 24/7 competitor monitoring
-│   │   ├── SKILL.md
-│   │   ├── scraper.js            # Flipkart/Amazon scrapers
-│   │   └── alerts.js             # WhatsApp/Telegram integration
-│   ├── pricing-optimizer/        # Dynamic pricing engine
-│   ├── copywriting/              # Brand-voice copy generator
-│   ├── meta-ads-optimizer/       # Meta Ads automation
-│   ├── analytics-dashboard/      # Reporting & visualization
-│   ├── email-marketing/          # Sequence automation
-│   ├── seo-optimizer/            # Search optimization
-│   └── social-media/             # Content & scheduling
-├── templates/
-│   ├── landing-pages/            # High-converting templates
-│   ├── email-sequences/          # Drip campaign templates
-│   └── ad-creatives/             # Meta/Google ad templates
-├── examples/
-│   └── tecno-case-study/         # Real-world implementation
-├── docs/
-│   ├── setup-guide.md
-│   ├── skill-development.md
-│   └── api-reference.md
-├── scripts/
-│   ├── install.sh
-│   └── setup.js                  # Interactive brand setup
-└── package.json
+├── 📁 skills/                    # Marketing agents
+│   ├── auto-setup/              # 60-second setup wizard
+│   ├── competitive-intel/       # Competitor monitoring
+│   ├── pricing-optimizer/       # Dynamic pricing
+│   ├── copywriting/             # Brand-voice copy
+│   ├── meta-ads-optimizer/      # Meta Ads automation
+│   ├── analytics-dashboard/     # Performance tracking
+│   ├── page-cro/                # Conversion optimization
+│   ├── email-sequence/          # Lifecycle emails
+│   ├── social-content/          # Social media content
+│   └── testing-framework/       # Quality assurance
+├── 📁 scripts/                   # CLI tools
+│   ├── cli.js                   # Main CLI entry
+│   ├── setup.js                 # Interactive setup
+│   └── start-team.js            # Team orchestrator
+├── 📄 brand-context.md           # Your brand profile
+├── 📄 README.md                  # This file
+├── 📄 LICENSE                    # MIT License
+└── 📄 package.json               # NPM manifest
 ```
 
 ---
 
-## 🛠️ Installation Methods
+## ⚙️ Configuration
 
-### Method 1: npx (Easiest)
+All configuration happens in `brand-context.md`:
+
+```yaml
+brand:
+  name: "Your Brand"
+  website: "https://yourbrand.com"
+  industry: "saas"  # saas, ecommerce, mobile, etc.
+  
+voice:
+  tone: "bold-energetic"
+  personality: "confident, youthful, exciting"
+  
+competitors:
+  - name: "Competitor A"
+    website: "https://competitor-a.com"
+    priority: "high"
+    
+pricing:
+  strategy: "value-based"
+  min-margin: 15%
+  
+alerts:
+  whatsapp: true
+  telegram: true
+  email: false
+```
+
+---
+
+## 🧪 Testing
+
 ```bash
-npx brand-marketing-team init my-brand
-cd my-brand
-npx brand-marketing-team setup
-```
+# Run all tests
+npm test
 
-### Method 2: Git Clone
-```bash
-git clone https://github.com/@samen namanwtf/brand-marketing-team.git
-cd brand-marketing-team
-npm install
-npm run setup
-```
+# Validate skill structure
+npm run validate
 
-### Method 3: OpenClaw
-```bash
-# In your OpenClaw workspace
-@openclaw skills add @samen namanwtf/brand-marketing-team
-```
+# Run unit tests
+npm run test:unit
 
-### Method 4: Claude Code
-```bash
-# In your project
-/plugin marketplace add @samen namanwtf/brand-marketing-team
-/plugin install brand-marketing-team
+# Run integration tests
+npm run test:integration
 ```
 
 ---
 
-## 🔐 Security & Safety
+## 🛡️ Safety Guardrails
 
-**OpenClaw Users:** This framework includes security guardrails:
-- ✅ **Read-only mode** for first 14 days
-- ✅ **Approval gates** for all publishing actions
-- ✅ **Anti-loop protection** (max 5 consecutive actions)
-- ✅ **Audit logging** (every action logged to `logs/`)
-- ✅ **Sandboxed execution** (skills run in isolated environment)
-
-**Claude Code Users:** Runs in Anthropic's managed environment (safest option)
-
----
-
-## 🌟 Built On & Improved From
-
-This project builds upon [Corey Haines' Marketing Skills](https://github.com/coreyhaines31/marketingskills) (MIT License) with significant enhancements:
-
-- **Universal brand adaptation** (not just SaaS)
-- **Real-time competitive intelligence** (automated scraping)
-- **24/7 autonomous operation** (cron + alerts)
-- **Dynamic pricing engine** (competitor-based optimization)
-- **Brand voice training** (contextual copy generation)
-- **Multi-platform compatibility** (OpenClaw + Claude Code + Cursor)
-
----
-
-## 🎓 Case Study: Tecno Mobile
-
-**Challenge:** Realme launched P4 Lite with 7000mAh battery at ₹14,999 — directly competing with Pova 6.
-
-**Solution:** Deployed Brand Marketing Team with:
-- Competitive intel agent monitoring Realme 24/7
-- Pricing optimizer recommending ₹500 price match
-- Copywriting agent creating "120Hz vs 90Hz" differentiation campaign
-
-**Results:**
-- Detected price drop within 2 hours
-- Adjusted pricing strategy in 4 hours
-- Created counter-campaign in 6 hours
-- **Maintained market share** despite aggressive competitor launch
-
-[Read Full Case Study →](examples/tecno-case-study/)
-
----
-
-## 🚀 Roadmap
-
-### Phase 1: Core Team (Complete)
-- [x] Competitive Intelligence Agent
-- [x] Pricing Optimizer Agent
-- [x] Copywriting Agent
-- [x] Meta Ads Optimizer
-- [x] Analytics Dashboard
-
-### Phase 2: Expansion (In Progress)
-- [ ] SEO Optimizer Agent
-- [ ] Email Marketing Agent
-- [ ] Social Media Agent
-- [ ] Influencer Outreach Agent
-- [ ] Content Calendar Agent
-
-### Phase 3: Advanced Features
-- [ ] Multi-agent coordination (agents talking to each other)
-- [ ] Predictive analytics (forecasting competitor moves)
-- [ ] Automated creative generation (images + video)
-- [ ] Voice/SMS marketing integration
+- ✅ **Margin Protection**: Never recommends below minimum margin
+- ✅ **Approval Gates**: Major changes require human approval
+- ✅ **Rate Limiting**: Respects API limits and robots.txt
+- ✅ **Privacy First**: No customer data scraped, only public info
+- ✅ **Audit Trail**: All actions logged with rationale
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-**Ways to contribute:**
-- Add new skills
-- Improve existing skills
-- Share case studies
-- Report bugs
-- Suggest features
+### Quick Contribute
+```bash
+# Fork the repo
+git clone https://github.com/namanwtf/brand-marketing-team.git
+cd brand-marketing-team
 
----
+# Create branch
+git checkout -b feature/amazing-feature
 
-## 📜 License
+# Make changes and commit
+git commit -m "Add amazing feature"
 
-MIT License - Copyright (c) 2026 Naman
-
-This project builds upon [Corey Haines' Marketing Skills](https://github.com/coreyhaines31/marketingskills) (MIT License).
-
----
-
-## 💬 Connect
-
-- **Twitter/X:** [@YOUR_HANDLE](https://twitter.com/YOUR_HANDLE)
-- **LinkedIn:** [Your Name](https://linkedin.com/in/YOUR_PROFILE)
-- **Discord:** [Join Community](https://discord.gg/YOUR_INVITE)
-- **Newsletter:** [Subscribe for Updates](https://YOUR_NEWSLETTER.substack.com)
+# Push and create PR
+git push origin feature/amazing-feature
+```
 
 ---
 
-## ⭐ Star History
+## 📈 Roadmap
 
-[![Star History Chart](https://api.star-history.com/svg?repos=@samen namanwtf/brand-marketing-team&type=Date)](https://star-history.com/#@samen namanwtf/brand-marketing-team&Date)
+### Phase 1: Core (✅ Complete)
+- [x] 10 marketing agents
+- [x] Auto-setup wizard
+- [x] Multi-platform support
+- [x] Testing framework
 
-**Help us reach 1,000 stars!** Star this repo if you find it useful.
+### Phase 2: Advanced (In Progress)
+- [ ] Predictive analytics
+- [ ] Automated creative generation
+- [ ] Voice/SMS marketing
+- [ ] Advanced A/B testing
+
+### Phase 3: Enterprise (Planned)
+- [ ] Multi-brand management
+- [ ] Team collaboration
+- [ ] Advanced permissions
+- [ ] Custom agent creation
 
 ---
 
-<p align="center">
-  <strong>Built with ❤️ by Naman</strong><br>
-  <em>Empowering marketers with AI teammates</em>
-</p>
+## 💬 Community
+
+- **Twitter:** [@namanwtf](https://twitter.com/namanwtf)
+- **Discord:** [Join our community](https://discord.gg/namanwtf)
+- **Issues:** [GitHub Issues](https://github.com/namanwtf/brand-marketing-team/issues)
+
+---
+
+## 📄 License
+
+MIT License - Copyright (c) 2026 @namanwtf
+
+See [LICENSE](LICENSE) for full details.
+
+---
+
+## 🙏 Acknowledgments
+
+Built with love by [Naman](https://twitter.com/namanwtf)
+
+Special thanks to the open-source community for making this possible.
+
+---
+
+<div align="center">
+
+### ⭐ Star this repo if you find it helpful!
+
+**[🚀 Get Started Now](#quick-start-60-seconds)**
+
+</div>

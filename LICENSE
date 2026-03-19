@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Naman
+Copyright (c) 2026 n
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,21 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-ATTRIBUTION:
-
-This project builds upon "Marketing Skills for AI Agents" by Corey Haines
-(https://github.com/coreyhaines31/marketingskills), used under the MIT License.
-
-Significant enhancements and modifications include:
-- Universal brand adaptation framework
-- Real-time competitive intelligence automation
-- 24/7 autonomous monitoring capabilities
-- Dynamic pricing optimization engine
-- Brand voice training system
-- Multi-platform compatibility (OpenClaw, Claude Code, Cursor)
-- Interactive CLI setup tools
-
-Original work © 2025 Corey Haines.

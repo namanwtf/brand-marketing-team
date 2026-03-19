@@ -1,8 +1,8 @@
 ---
 name: copywriting
 description: Brand-voice copywriting with psychology frameworks
-author: Brand Marketing Team
-version: 2.0.0
+author: "@namanwtf"
+version: 3.0.0
 requires: brand-context, marketing-psychology
 category: content
 ---
@@ -10,13 +10,6 @@ category: content
 # 📝 Copywriting Agent
 
 **Purpose:** Create conversion-optimized copy that matches your brand voice and applies proven psychology frameworks. Never write bland copy again.
-
-**Improvements over v1.0:**
-- ✅ Brand voice training from brand-context.md
-- ✅ Psychology frameworks auto-applied
-- ✅ Hinglish support for Indian market
-- ₹X,999 pricing psychology
-- ✅ Battery/charging focus for mobile brands
 
 ---
 
@@ -27,7 +20,7 @@ category: content
 @copywriting create homepage
 
 # Write landing page for product launch
-@copywriting create landing-page "Pova 7 Launch"
+@copywriting create landing-page "Product X Launch"
 
 # Optimize existing copy
 @copywriting optimize meta-ads --variant B
@@ -36,7 +29,7 @@ category: content
 @copywriting email-sequence welcome
 
 # Create social media content
-@copywriting social --platform instagram --campaign "Holi Sale"
+@copywriting social --platform instagram --campaign "Summer Sale"
 ```
 
 ---
@@ -60,43 +53,40 @@ Every piece of copy includes:
 ```markdown
 ## SPECIFICITY PRINCIPLE
 ❌ "Long battery life"
-✅ "7,000mAh battery — 2 days heavy use"
+✅ "48-hour battery — 2 days heavy use"
 
 ## SOCIAL PROOF
 ❌ "Trusted by many"
-✅ "Join 2M+ gamers who never run out of charge"
+✅ "Join 50,000+ users who never look back"
 
 ## SCARCITY
 ❌ "Limited time offer"
 ✅ "Only 500 units at launch price"
 
 ## PRICE ANCHORING
-❌ "₹15,999"
-✅ "Was ₹18,999 | Now ₹15,999 | You save ₹3,000"
+❌ "$199"
+✅ "Was $249 | Now $199 | You save $50"
 
 ## AUTHORITY
-❌ "Good camera"
-✅ "64MP AI camera with Sony IMX sensor"
+❌ "Good quality"
+✅ "Engineered with aerospace-grade materials"
 ```
 
-### 3. Hinglish Support
-For Indian Tier-2/3 markets:
+### 3. Multi-Language Support
+For global markets:
+- English (US/UK/AU)
+- Spanish
+- French
+- German
+- Localized CTAs and cultural references
 
-```
-English: "Game all day without charging"
-Hinglish: "Poora din khelo, tension mat lo — battery chalti rahegi!"
-
-English: "Most powerful processor"
-Hinglish: "Sabse powerful processor — lag khatam!"
-```
-
-### 4. Mobile-Specific Copy
-Auto-detects mobile context and emphasizes:
-- Battery life (mAh, hours of use)
-- Charging speed (Watts, "0-100 in X minutes")
-- Display specs (Hz, AMOLED, brightness)
-- Gaming performance (FPS, thermal management)
-- Camera specs (MP, AI features, night mode)
+### 4. Industry-Specific Copy
+Auto-detects your industry and emphasizes relevant features:
+- **SaaS**: Features, integrations, ROI
+- **E-commerce**: Product benefits, shipping, returns
+- **Mobile/Tech**: Specs, performance, battery
+- **Fashion**: Style, materials, exclusivity
+- **Food**: Taste, ingredients, experience
 
 ---
 
@@ -106,13 +96,13 @@ Add to your `brand-context.md`:
 
 ```yaml
 copywriting:
-  voice: "bold-energetic"  # Options: professional, friendly, luxury, tech-savvy
-  languages: ["english", "hinglish"]
+  voice: "bold-energetic"  # Options: professional, friendly, luxury, tech-savvy, playful
+  languages: ["english", "spanish"]
   
   messaging-pillars:
-    - "Battery life"
-    - "Gaming performance"
-    - "Value for money"
+    - "Quality"
+    - "Value"
+    - "Innovation"
   
   psychology-frameworks:
     - "specificity"
@@ -130,6 +120,8 @@ copywriting:
     - "value" (instead of cheap)
     - "premium features" (instead of budget)
     - "smart choice" (instead of entry-level)
+    
+  industry: "saas"  # saas, ecommerce, mobile, fashion, food, etc.
 ```
 
 ---
@@ -144,172 +136,176 @@ Agent: 📝 HOMEPAGE COPY OPTIONS
 
 OPTION 1: Bold & Direct
 ────────────────────────
-**Headline:** Game All Day. Win Every Night.
-**Subheadline:** 7,000mAh battery. 120Hz display. Under ₹20,000.
-The phone that keeps up with your ambition.
-**CTA:** Claim Your Gaming Edge →
+**Headline:** Scale Faster. Work Smarter.
+**Subheadline:** The platform that automates your workflow.
+Used by 10,000+ teams worldwide. Starting at $29/month.
+**CTA:** Start Free Trial →
 
 Psychology applied:
-✅ Action verbs ("Game", "Win", "Claim")
-✅ Specifics (7,000mAh, 120Hz, ₹20k)
-✅ Outcome-focused ("Win Every Night")
+✅ Action verbs ("Scale", "Work")
+✅ Specifics (10,000+ teams, $29/month)
+✅ Outcome-focused ("Smarter")
 
 OPTION 2: Challenge-Based
 ────────────────────────
-**Headline:** Your Current Phone Can't Handle This.
-**Subheadline:** 7,000mAh. 120Hz. Built for gamers who refuse to lose.
-**CTA:** Upgrade to Pova 6 →
+**Headline:** Your Current Tools Are Holding You Back.
+**Subheadline:** Switch to the platform that actually works.
+10,000+ teams already made the move.
+**CTA:** See Why →
 
 OPTION 3: Social Proof
 ────────────────────────
-**Headline:** 2 Million Gamers Made the Switch.
-**Subheadline:** Here's why: 7,000mAh battery. 120Hz smoothness. 
-Price that makes sense: under ₹20,000.
-**CTA:** Join the Movement →
+**Headline:** Join 10,000+ Teams Working Smarter.
+**Subheadline:** The workflow automation platform that 
+saves 10 hours every week. Starting at $29/month.
+**CTA:** Join Free →
 
 RECOMMENDATION: Option 1 (A/B test with Option 2)
 ```
 
 ### Example 2: Product Page
 ```
-User: @copywriting create product-page pova-6
+User: @copywriting create product-page product-x
 
-Agent: 📝 POVA 6 PRODUCT PAGE
+Agent: 📝 PRODUCT-X PRODUCT PAGE
 
 HERO SECTION:
-**Headline:** Power That Lasts. Performance That Dominates.
+**Headline:** Automate Your Workflow. Reclaim Your Time.
 **Subheadline:** 
-• 7,000mAh battery — 2 days non-stop gaming
-• 120Hz AMOLED display — butter-smooth visuals
-• Dimensity 7300 — flagship performance under ₹20k
+• Save 10+ hours/week with smart automation
+• Integrate with 100+ tools you already use
+• Start free, upgrade when you grow
 
-**Price:** ₹15,999
-**Launch Offer:** ₹14,999 + Free Gaming Headphones
+**Price:** $29/month
+**Launch Offer:** $19/month (first 3 months)
 
 KEY FEATURES:
-🔋 **Battery That Won't Quit**
-    7,000mAh capacity. 45W fast charging (0-50% in 25 mins).
-    Stream 18 hours. Game 12 hours. No power bank needed.
+⚡ **Automation That Actually Works**
+    Build workflows without code. Connect your tools.
+    Let the system handle the repetitive work.
 
-🎮 **Display Built for Gaming**
-    120Hz refresh rate. 360Hz touch sampling. 
-    Spot enemies faster. React quicker. Win more.
+🔗 **100+ Integrations**
+    Slack, Notion, HubSpot, Salesforce, and more.
+    If you use it, we connect to it.
 
-⚡ **Speed Without Compromise**
-    MediaTek Dimensity 7300. 5G ready. 
-    Lag-free gaming. Fast downloads. Smooth multitasking.
+📊 **Analytics Dashboard**
+    Track time saved, ROI, and team productivity.
+    Make data-driven decisions.
 
-📸 **Capture Every Moment**
-    64MP AI triple camera. Night mode. Portrait mode.
-    Your victories deserve to be remembered.
+🔒 **Enterprise Security**
+    SOC 2 compliant. GDPR ready. Your data is safe.
 
 SOCIAL PROOF:
-"Best gaming phone under ₹20,000" — TechRadar India
-★★★★★ 4.8/5 from 12,847 gamers
+"Saved our team 15 hours/week" — Tech Company CEO
+★★★★★ 4.9/5 from 2,000+ reviews
 
-CTA: **Grab Yours Now →** (₹14,999 limited offer)
+CTA: **Start Free Trial →** (No credit card required)
 ```
 
 ### Example 3: Meta Ad Copy
 ```
-User: @copywriting create meta-ad "pova-6-launch"
+User: @copywriting create meta-ad "product-x-launch"
 
 Agent: 📝 META AD OPTIONS
 
 AD 1: Problem-Solution
 ──────────────────────
 **Primary Text:**
-Tired of your phone dying mid-game? 😤
+Tired of repetitive tasks eating your day? 😤
 
-Meet Pova 6 — 7,000mAh battery that lasts 2 days.
-120Hz display. Under ₹20,000.
+Meet Product-X — automation that actually works.
+Save 10+ hours/week. Starting at $29/month.
 
-Gamers are switching. Here's why 👇
+Teams are switching. Here's why 👇
 
-**Headline:** Game All Day Without Charging
-**Description:** 7,000mAh battery | 120Hz display | ₹15,999
-**CTA:** Shop Now
+**Headline:** Automate Your Workflow
+**Description:** Save 10+ hours/week | $29/month
+**CTA:** Start Free Trial
 
 AD 2: Social Proof
 ──────────────────────
 **Primary Text:**
-2 million gamers made the switch this year.
+10,000+ teams made the switch this year.
 
-The reason? Pova 6 delivers:
-✅ 7,000mAh battery (2 days use)
-✅ 120Hz AMOLED display
-✅ Flagship performance under ₹20k
+The reason? Product-X delivers:
+✅ 10+ hours saved weekly
+✅ 100+ integrations
+✅ Starts at $29/month
 
-Join them. Limited launch offer live now 🔥
+Join them. Free trial available 🔥
 
-**Headline:** India's Favorite Gaming Phone
-**Description:** From ₹15,999 | Free gaming headphones
-**CTA:** Claim Offer
+**Headline:** Trusted by 10,000+ Teams
+**Description:** From $29/month | 14-day free trial
+**CTA:** Start Free
 
 AD 3: Urgency
 ──────────────────────
 **Primary Text:**
 ⚠️ Launch offer ends in 48 hours
 
-Pova 6 at ₹14,999 (₹1,000 off) + Free Gaming Headphones
+Product-X at $19/month (normally $29)
+Save 35% — forever.
 
-7,000mAh battery. 120Hz display. Built for gamers.
+10+ hours saved weekly. 100+ integrations.
 
 Don't miss out →
 
-**Headline:** ₹1,000 Off Ends Soon
-**Description:** Launch offer + free headphones
-**CTA:** Shop Now
+**Headline:** 35% Off Ends Soon
+**Description:** Launch offer + free onboarding
+**CTA:** Claim Offer
 
 RECOMMENDATION: Run all 3. Budget split: 40/40/20
 ```
 
-### Example 4: Hinglish Copy
+### Example 4: Email Sequence
 ```
-User: @copywriting create hinglish social-post
+User: @copywriting email-sequence onboarding
 
-Agent: 📝 HINGLISH CONTENT
+Agent: 📝 ONBOARDING EMAIL SEQUENCE
 
-POST 1: Battery Focus
-────────────────────
-Battery ka tension? 🤔
-POVA 6 le lo — 7,000mAh battery!
+EMAIL 1: Welcome (Send immediately)
+────────────────────────────────
+Subject: Welcome to Product-X! Let's get you set up 🚀
 
-✅ Poora din gaming
-✅ 2 din tak charge nahi karna padega
-✅ Price sirf ₹15,999
+Hi [First Name],
 
-Ab bas khelo, charging ki fikar chhodo! 🔥
+Welcome to the 10,000+ teams using Product-X to save time!
 
-#POVA6 #GamingPhone #BatteryKing
+Here's what happens next:
+✅ Connect your first integration (takes 2 minutes)
+✅ Build your first automation workflow
+✅ Start saving hours every week
 
-POST 2: Gaming Performance
-────────────────────
-Lag se pareshan? 😤
+[CTA: Connect Your First Tool →]
 
-POVA 6 mein hai:
-🎮 120Hz display — smooth like butter
-⚡ Dimensity 7300 — no lag, only wins
-🔋 7,000mAh — game all day
+Need help? Reply to this email — we read every one.
 
-Price: ₹15,999 (₹18,999 se kam!)
+Cheers,
+The Product-X Team
 
-Link in bio 👆
+---
 
-POST 3: Value Proposition
-────────────────────
-₹20,000 ke andar best gaming phone? 🎮
+EMAIL 2: Quick Win (Send after 24 hours)
+────────────────────────────────
+Subject: Your first automation is waiting 🎯
 
-Haan, POVA 6! 💪
-• 7,000mAh battery
-• 120Hz AMOLED display  
-• 64MP camera
-• Flagship processor
+Hi [First Name],
 
-Sab kuch hai, price bhi kam! 😍
-Sirf ₹15,999
+Most Product-X users save 5+ hours in their first week.
 
-Abhi order karo 👇
+Here's a 5-minute automation that'll save you 2 hours/week:
+
+[Walkthrough: Connect Slack + Calendar]
+
+Try it now → [CTA]
+
+---
+
+EMAIL 3: Social Proof (Send after 3 days)
+────────────────────────────────
+Subject: How [Similar Company] saved 15 hours/week 📈
+
+[Case study email with customer story]
 ```
 
 ---
@@ -318,39 +314,37 @@ Abhi order karo 👇
 
 ### PAS (Problem-Agitate-Solution)
 ```
-**Problem:** Your phone dies mid-game
-**Agitate:** You lose the match. Your team hates you. 
-           You miss clutch moments.
-**Solution:** Pova 6 — 7,000mAh battery. Game all day.
+**Problem:** You waste hours on repetitive tasks
+**Agitate:** You're falling behind. Your competitors are faster.
+           You're stuck doing work a machine could handle.
+**Solution:** Product-X — automate the boring stuff.
 ```
 
 ### AIDA (Attention-Interest-Desire-Action)
 ```
-**Attention:** Game All Day. Win Every Night.
-**Interest:** 7,000mAh battery. 120Hz display. Under ₹20k.
-**Desire:** Never miss a clutch moment. Dominate every match.
-**Action:** Claim Your Gaming Edge →
+**Attention:** Scale Faster. Work Smarter.
+**Interest:** 10,000+ teams save 10 hours/week
+**Desire:** Imagine what you could do with that time
+**Action:** Start Free Trial →
 ```
 
 ### FAB (Features-Advantages-Benefits)
 ```
-**Feature:** 7,000mAh battery
-**Advantage:** 2 days of heavy use
-**Benefit:** Game all weekend without charging
+**Feature:** 100+ integrations
+**Advantage:** Connects to tools you already use
+**Benefit:** No migration headache, works immediately
 ```
 
 ---
 
-## Credits
+## Related Skills
 
-Built upon copywriting framework by Corey Haines (MIT License).
-Enhanced with:
-- Brand voice auto-training
-- Hinglish language support
-- Mobile-specific copy patterns
-- Indian market psychology
-- Automated framework application
+- **pricing-optimizer**: Price messaging and offers
+- **meta-ads-optimizer**: Ad copy optimization
+- **email-sequence**: Email marketing automation
+- **social-content**: Social media copy
 
 ---
 
 *Part of the Brand Marketing Team framework.*
+*Author: @namanwtf | Version 3.0.0 | MIT License*

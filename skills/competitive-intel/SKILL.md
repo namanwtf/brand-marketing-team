@@ -1,22 +1,15 @@
 ---
 name: competitive-intel
 description: 24/7 competitor monitoring with real-time alerts
-author: Brand Marketing Team
-version: 2.0.0
+author: "@namanwtf"
+version: 3.0.0
 requires: brand-context
 category: intelligence
 ---
 
 # 🕵️ Competitive Intelligence Agent
 
-**Purpose:** Monitor competitors 24/7, detect price changes, new launches, and marketing moves. Send instant alerts via WhatsApp/Telegram.
-
-**Improvements over v1.0:**
-- ✅ Real-time web scraping (not just manual research)
-- ✅ Automatic price history tracking
-- ✅ WhatsApp/Telegram integration
-- ✅ Smart alerts (only significant changes)
-- ✅ Historical trend analysis
+**Purpose:** Monitor competitors 24/7, detect price changes, new launches, and marketing moves. Send instant alerts via WhatsApp/Telegram/Slack.
 
 ---
 
@@ -24,16 +17,16 @@ category: intelligence
 
 ```bash
 # Start 24/7 monitoring
-@competitive-intel watch realme samsung vivo
+@competitive-intel watch competitor-a competitor-b
 
 # Check specific competitor
-@competitive-intel check realme
+@competitive-intel check competitor-a
 
 # Get daily briefing
 @competitive-intel daily-brief
 
 # Set up price alerts
-@competitive-intel alert when "samsung m17e" < 13000
+@competitive-intel alert when "product-x" < 199
 
 # Generate competitor report
 @competitive-intel report --weekly
@@ -44,20 +37,21 @@ category: intelligence
 ## Capabilities
 
 ### 1. Real-Time Price Monitoring
-- Scrapes Flipkart, Amazon, and retailer sites
+- Scrapes e-commerce sites and retailer websites
 - Tracks price changes every 30 minutes
 - Detects stock availability changes
-- Monitors promotional offers
+- Monitors promotional offers and discounts
 
 ### 2. Launch Detection
 - Watches for new product announcements
-- Monitors BIS certifications (India)
+- Monitors certification databases
 - Tracks press releases and news
-- Detects social media teases
+- Detects social media teases and leaks
 
 ### 3. Smart Alerting
 - WhatsApp notifications for major changes
 - Telegram alerts for daily summaries
+- Slack integration for team alerts
 - Email reports for weekly analysis
 - Only alerts on significant changes (>5% price drop, new launches)
 
@@ -65,7 +59,7 @@ category: intelligence
 - Price trend charts
 - Seasonal pattern detection
 - Competitor response tracking
-- Market share estimation
+- Market positioning analysis
 
 ---
 
@@ -75,10 +69,9 @@ category: intelligence
 ```
 User: @competitive-intel watch all
 Agent: Starting 24/7 monitoring for:
-       • Realme (P4 Lite, Narzo series)
-       • Samsung (M-series, A-series)
-       • Vivo (T-series, Y-series)
-       • Poco (X-series)
+       • Competitor A (Product X, Product Y)
+       • Competitor B (Product Z)
+       • Competitor C (Full range)
        
        Alert settings:
        • Price drop > 10%: Immediate WhatsApp
@@ -89,21 +82,21 @@ Agent: Starting 24/7 monitoring for:
 
 ### Check Specific Product
 ```
-User: @competitive-intel check "realme p4 lite"
-Agent: 📊 REALME P4 LITE STATUS
+User: @competitive-intel check "product-x"
+Agent: 📊 PRODUCT-X STATUS
        
-       Current Price: ₹14,999 (Flipkart)
-       Launch Date: March 19, 2025
-       Key Specs: 7000mAh, Dimensity 6300
+       Current Price: $199 (Platform A)
+       Launch Date: March 2025
+       Key Specs: Feature A, Feature B, Feature C
        
        Price History:
-       • Mar 19: ₹16,999 (launch)
-       • Mar 22: ₹14,999 (current, -12%)
+       • Mar 1: $229 (launch)
+       • Mar 15: $199 (current, -13%)
        
        ⚠️ THREAT ANALYSIS:
-       • Direct competitor to our Pova 6
-       • 7000mAh battery matches our spec
-       • ₹1000 cheaper than our current pricing
+       • Direct competitor to our Product Y
+       • Similar feature set
+       • $30 cheaper than our current pricing
        
        RECOMMENDED ACTION:
        Consider price match or bundle offer.
@@ -112,22 +105,22 @@ Agent: 📊 REALME P4 LITE STATUS
 ### Daily Briefing
 ```
 User: @competitive-intel daily-brief
-Agent: 🌅 DAILY COMPETITIVE BRIEF - March 23, 2025
+Agent: 🌅 DAILY COMPETITIVE BRIEF - March 20, 2025
 
        🔴 HIGH PRIORITY:
-       • Samsung dropped M17e price to ₹12,999 (-₹1000)
-       • Vivo T5x stock running low on Flipkart
+       • Competitor A dropped Product X price to $179 (-$20)
+       • Competitor B stock running low on Platform Y
        
        🟡 MEDIUM PRIORITY:
-       • Realme P4 Lite maintaining ₹14,999
-       • Poco X8 Pro launch buzz building
+       • Competitor C maintaining current pricing
+       • Competitor D launch buzz building
        
        🟢 OPPORTUNITIES:
-       • Samsung out of stock on Amazon
-       • Realme shipping delays reported
+       • Competitor A out of stock on Platform B
+       • Competitor C shipping delays reported
        
        YOUR POSITION:
-       • Pova 6: Price competitive, stock available
+       • Product Y: Price competitive, stock available
        • Recommendation: Maintain pricing, push availability messaging
 ```
 
@@ -140,26 +133,30 @@ Add to your `brand-context.md`:
 ```yaml
 competitive-intel:
   competitors:
-    - name: "Realme"
-      products: ["P4 Lite", "Narzo 70", "12 Pro"]
+    - name: "Competitor A"
+      products: ["Product X", "Product Y", "Product Z"]
       priority: "high"
-    - name: "Samsung"
-      products: ["M17e", "A16", "F06"]
-      priority: "high"
-    - name: "Vivo"
-      products: ["T5x", "Y51", "V40"]
+      platforms: ["platform-a.com", "platform-b.com"]
+    - name: "Competitor B"
+      products: ["Product M", "Product N"]
       priority: "medium"
+      platforms: ["platform-c.com"]
   
   alert-channels:
     whatsapp: true
     telegram: true
     email: false
+    slack: true
   
   thresholds:
     price-drop: 10%      # Alert on >10% price drop
     price-increase: 5%   # Alert on >5% price increase
     stock-out: true      # Alert when competitor goes OOS
     new-launch: true     # Alert on new product launches
+  
+  monitoring:
+    frequency: "30min"   # Check every 30 minutes
+    sources: ["ecommerce", "news", "social", "certifications"]
 ```
 
 ---
@@ -176,12 +173,11 @@ This skill feeds data to:
 
 ## Data Sources
 
-- Flipkart.com (price, stock, reviews)
-- Amazon.in (price, stock, reviews)
-- GSMArena.com (specifications)
-- 91mobiles.com (news, launches)
-- Smartprix.com (comparisons)
-- BIS certification database (new launches)
+- E-commerce platforms (price, stock, reviews)
+- News aggregators (RSS + APIs)
+- Social media monitoring
+- Certification databases
+- Press release trackers
 
 ---
 
@@ -197,13 +193,14 @@ This skill feeds data to:
 │  └─ Daily 7 AM: Briefing generation    │
 ├─────────────────────────────────────────┤
 │  Scrapers                               │
-│  ├─ Flipkart scraper (Puppeteer)       │
-│  ├─ Amazon scraper (API + scrape)      │
-│  └─ News aggregator (RSS + APIs)       │
+│  ├─ E-commerce scrapers (Puppeteer)    │
+│  ├─ News aggregators (RSS + APIs)      │
+│  └─ Social media monitors              │
 ├─────────────────────────────────────────┤
 │  Alert System                           │
 │  ├─ WhatsApp (Twilio)                  │
 │  ├─ Telegram (Bot API)                 │
+│  ├─ Slack (Webhooks)                   │
 │  └─ Email (SendGrid/SES)               │
 ├─────────────────────────────────────────┤
 │  Database (JSON/CSV)                    │
@@ -225,17 +222,6 @@ This skill feeds data to:
 
 ---
 
-## Credits
-
-Built upon competitive-intel framework by Corey Haines (MIT License).
-Enhanced with:
-- Real-time scraping capabilities
-- WhatsApp/Telegram integration
-- Historical price tracking
-- Smart alerting system
-
----
-
 ## Related Skills
 
 - **pricing-optimizer**: Uses competitive data for dynamic pricing
@@ -245,3 +231,4 @@ Enhanced with:
 ---
 
 *Part of the Brand Marketing Team framework.*
+*Author: @namanwtf | Version 3.0.0 | MIT License*

@@ -1,62 +1,93 @@
 {
   "name": "brand-marketing-team",
-  "version": "1.0.0",
-  "description": "The AI Marketing Team for Any Brand - 24/7 autonomous marketing agents",
+  "version": "3.0.0",
+  "description": "Deploy a 24/7 AI Marketing Department in 60 seconds",
   "main": "index.js",
   "bin": {
-    "brand-marketing-team": "./scripts/cli.js"
+    "brand-marketing-team": "./scripts/cli.js",
+    "bmt": "./scripts/cli.js"
   },
   "scripts": {
     "setup": "node scripts/setup.js",
-    "team:start": "node scripts/start-team.js",
+    "start": "node scripts/start-team.js",
+    "test": "node scripts/test-orchestrator.js",
+    "test:unit": "jest",
+    "test:integration": "jest --testPathPattern=integration",
+    "test:e2e": "jest --testPathPattern=e2e",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint scripts/ skills/",
+    "lint:fix": "eslint scripts/ skills/ --fix",
+    "validate": "node scripts/validate-skills.js",
+    "optimize": "node scripts/gemini-optimize.js",
+    "team:start": "npm run start",
     "team:stop": "node scripts/stop-team.js",
+    "team:status": "node scripts/status.js",
     "intel:watch": "node skills/competitive-intel/watch.js",
     "pricing:analyze": "node skills/pricing-optimizer/analyze.js",
     "copy:create": "node skills/copywriting/create.js",
-    "test": "jest",
-    "docs:generate": "node scripts/generate-docs.js"
+    "dashboard": "node skills/analytics-dashboard/server.js",
+    "prepare": "echo 'Ready to use'"
   },
   "keywords": [
     "ai-agent",
     "marketing",
     "automation",
+    "openclaw",
+    "claude-code",
+    "cursor",
     "competitive-intelligence",
     "pricing-optimization",
     "copywriting",
     "meta-ads",
-    "openclaw",
-    "claude-code",
-    "brand-management"
+    "brand-management",
+    "growth-hacking",
+    "marketing-automation",
+    "ai-marketing",
+    "autonomous-agents"
   ],
-  "author": "[YOUR NAME]",
+  "author": "@namanwtf (https://twitter.com/namanwtf)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/@samen namanwtf/brand-marketing-team.git"
+    "url": "https://github.com/namanwtf/brand-marketing-team.git"
   },
   "bugs": {
-    "url": "https://github.com/@samen namanwtf/brand-marketing-team/issues"
+    "url": "https://github.com/namanwtf/brand-marketing-team/issues"
   },
-  "homepage": "https://github.com/@samen namanwtf/brand-marketing-team#readme",
+  "homepage": "https://github.com/namanwtf/brand-marketing-team#readme",
   "dependencies": {
+    "@google/generative-ai": "^0.2.0",
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
-    "puppeteer": "^21.0.0",
-    "node-cron": "^3.0.3",
-    "twilio": "^4.19.0",
-    "telegraf": "^4.15.0",
-    "winston": "^3.11.0",
+    "commander": "^11.1.0",
     "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "inquirer": "^9.2.0",
-    "chalk": "^5.3.0",
-    "ora": "^7.0.0"
+    "node-cron": "^3.0.3",
+    "ora": "^7.0.0",
+    "puppeteer": "^21.0.0",
+    "telegraf": "^4.15.0",
+    "twilio": "^4.19.0",
+    "winston": "^3.11.0",
+    "yaml": "^2.3.4"
   },
   "devDependencies": {
+    "eslint": "^8.54.0",
     "jest": "^29.7.0",
-    "eslint": "^8.54.0"
+    "jest-environment-node": "^29.7.0",
+    "supertest": "^6.3.3"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "preferGlobal": true,
+  "files": [
+    "scripts/",
+    "skills/",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ]
 }
