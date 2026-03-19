@@ -1,7 +1,7 @@
 {
   "name": "brand-marketing-team",
   "version": "3.0.0",
-  "description": "Complete AI Marketing Department for OpenClaw - 20 autonomous agents covering every aspect of marketing: SEO, influencers, video, PR, community, retention, viral growth, and more",
+  "description": "Complete AI Marketing Department for OpenClaw - 30 autonomous agents covering every aspect of marketing: SEO, influencers, video, PR, community, retention, viral growth, AI chatbots, predictive analytics, and more",
   "author": "@namanwtf",
   "license": "MIT",
   "homepage": "https://github.com/namanwtf/brand-marketing-team",
@@ -17,6 +17,16 @@
     "email-sequence",
     "social-content",
     "testing-framework",
+    "ai-chatbot-builder",
+    "personalization-engine",
+    "predictive-analytics",
+    "voice-search-optimizer",
+    "webinar-automation",
+    "case-study-generator",
+    "partnership-scout",
+    "crisis-manager",
+    "localization-automation",
+    "lead-scoring",
     "seo-optimizer",
     "influencer-outreach",
     "content-calendar",
@@ -39,6 +49,8 @@
   "tags": [
     "marketing",
     "automation",
+    "ai",
+    "openclaw",
     "competitive-intelligence",
     "pricing",
     "copywriting",
@@ -53,6 +65,12 @@
     "retention",
     "viral",
     "pr",
-    "community"
+    "community",
+    "chatbot",
+    "predictive",
+    "webinar",
+    "lead-scoring",
+    "crisis-management",
+    "localization"
   ]
 }
