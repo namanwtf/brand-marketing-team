@@ -1,133 +1,88 @@
 ---
-name: webinar-automation
-description: Creates and manages automated webinar funnels from registration to follow-up sequences.
-author: @namanwtf
+name: "Webinar Automation"
+description: "Automated webinar funnels and sequences"
+author: "@namanwtf"
 version: 3.0.0
 ---
 
-# Webinar Automation Skill
-
-## Overview
-
-The `webinar-automation` skill streamlines the entire webinar lifecycle—from promotion and registration to live delivery and post-event follow-up. It creates automated funnels that maximize attendance, engagement, and conversion, whether running live webinars, automated replays, or hybrid events.
+# Webinar Automation
 
 ## When to Use
 
-Use this skill when you need to:
+Use this skill to automate the entire lifecycle of your webinars, from registration and reminders to live delivery and post-event follow-up. This is ideal for marketers looking to:
 
--   **Create webinar funnels:** Design end-to-end automated sequences for webinar promotion and follow-up.
--   **Automate registration workflows:** Set up registration pages, confirmation emails, and reminder sequences.
--   **Manage attendee communications:** Automate pre-webinar reminders and post-webinar nurture sequences.
--   **Generate webinar content:** Create scripts, slide decks, and promotional materials.
--   **Track webinar metrics:** Monitor registration rates, attendance, engagement, and conversions.
--   **Set up evergreen webinars:** Create automated replay funnels that run continuously.
--   **Integrate with marketing stack:** Connect webinars to CRM, email platforms, and analytics tools.
-
-**Commands:**
-
--   `webinar create [webinar_name] --type [live|automated|hybrid] --topic "[topic]"`: Creates a new webinar project.
--   `webinar funnel setup [webinar_name] --stages "[registration,reminder,followup]"`: Sets up the automated funnel.
--   `webinar content generate [webinar_name] --format "[script|slides|emails]"`: Generates webinar content.
--   `webinar promote [webinar_name] --channels "[email,social,ads]"`: Launches promotional campaigns.
--   `webinar monitor [webinar_name] --metrics "[registrations,attendance,engagement]"`: Tracks webinar performance.
--   `webinar replay setup [webinar_name] --automation "[evergreen|scheduled]"`: Configures replay automation.
+-   **Generate Leads:** Capture and nurture leads through engaging educational content.
+-   **Product Demonstrations:** Automate product demos for potential customers.
+-   **Onboarding and Training:** Provide scalable training sessions for new users or employees.
+-   **Evergreen Content:** Repurpose live webinars into automated, on-demand experiences.
+-   **Sales Funnels:** Integrate webinars seamlessly into sales funnels to drive conversions.
+-   **Audience Engagement:** Maintain consistent engagement with your audience through structured follow-up sequences.
 
 ## Capabilities
 
--   **Funnel Design:** Creates multi-stage funnels with registration, reminder, live event, and follow-up sequences.
--   **Landing Page Generation:** Builds optimized registration pages with conversion-focused copy.
--   **Email Sequence Automation:** Sets up behavioral email triggers based on registration, attendance, and engagement.
--   **Content Creation:** Generates webinar scripts, slide outlines, and promotional copy.
--   **Attendee Segmentation:** Segments audiences based on behavior (registered, attended, dropped off, engaged).
--   **Evergreen Automation:** Configures automated replay systems for continuous lead generation.
--   **Integration Hub:** Connects with Zoom, GoToWebinar, WebinarJam, CRMs, and email platforms.
--   **Analytics & Reporting:** Tracks funnel metrics, ROI, and audience engagement patterns.
+The Webinar Automation skill provides the following capabilities:
+
+-   **Automated Registration Page Creation:** Generates customizable landing pages for webinar sign-ups.
+-   **Email Reminder Sequences:** Sets up automated email sequences for registration confirmation, pre-webinar reminders, and post-webinar follow-ups.
+-   **Webinar Platform Integration:** Connects with popular webinar platforms (e.g., Zoom Webinar, GoToWebinar, WebinarJam) to schedule and manage events.
+-   **Content Scheduling & Delivery:** Automates the scheduling and playback of pre-recorded webinar content for evergreen webinars.
+-   **Live Session Management (Assisted):** Provides tools and checklists for smooth live webinar delivery, including Q&A management and poll integration.
+-   **Post-Webinar Analytics Reporting:** Gathers and presents data on attendance rates, engagement, and conversion metrics.
+-   **CRM/Marketing Automation Integration:** Syncs registrant and attendee data with your CRM or marketing automation platforms.
 
 ## Usage Examples
 
-### Scenario 1: Create a complete webinar funnel for product launch
+### Example 1: Create a new automated webinar campaign
 
-```bash
-webinar create "Tecno Pova 6 Launch" --type live --topic "Gaming Performance Showcase"
-webinar funnel setup "Tecno Pova 6 Launch" --stages "registration,3_reminders,live_event,3_followups"
-webinar content generate "Tecno Pova 6 Launch" --format "script,slides,emails"
-webinar promote "Tecno Pova 6 Launch" --channels "email,social,meta_ads"
+```python
+webinar.create_campaign(
+    name="Product Launch Webinar",
+    topic="Introducing Our Latest Innovation",
+    date="2026-04-15 10:00 AM EDT",
+    platform="Zoom Webinar",
+    presenter="John Doe",
+    registration_page_template="modern_tech",
+    email_sequence_template="standard_lead_nurture"
+)
 ```
 
-### Scenario 2: Set up an evergreen automated webinar
+### Example 2: Set up an evergreen webinar from a recorded session
 
-```bash
-webinar create "Mobile Photography Masterclass" --type automated --topic "Pro Tips for Smartphone Photography"
-webinar funnel setup "Mobile Photography Masterclass" --stages "registration,immediate_access,3_value_emails,offer"
-webinar replay setup "Mobile Photography Masterclass" --automation evergreen
+```python
+webinar.setup_evergreen(
+    name="On-Demand Product Demo",
+    recorded_url="https://www.example.com/webinar_recording.mp4",
+    cta_url="https://www.example.com/buy_now",
+    frequency="weekly",
+    email_sequence_template="evergreen_follow_up"
+)
 ```
 
-### Scenario 3: Monitor webinar performance and optimize
+### Example 3: Generate a performance report for a past webinar
 
-```bash
-webinar monitor "Tecno Pova 6 Launch" --metrics "registrations,show_rate,engagement_score,conversion_rate"
-# Agent provides detailed analytics and recommendations for improvement
-```
-
-### Scenario 4: Generate follow-up sequences for different attendee segments
-
-```bash
-webinar content generate "Tecno Pova 6 Launch" --format "followup_emails" --segments "attended_full,attended_partial,no_show"
-# Agent creates tailored email sequences for each segment
+```python
+webinar.generate_report(campaign_id="product_launch_webinar_20260415")
 ```
 
 ## Configuration
 
-Webinar automation requires configuring platforms, content templates, and behavioral triggers.
+The Webinar Automation skill can be configured with the following parameters:
 
--   **`config/platform_credentials.json`:** API keys for webinar platforms (Zoom, WebinarJam, etc.).
--   **`templates/emails/*.html`:** Email templates for different funnel stages.
--   **`templates/landing_pages/*.html`:** Registration page templates.
--   **`content/webinars/*`:** Webinar-specific content (scripts, slide decks).
--   **`funnels/*.json`:** Funnel configuration files defining stage sequences and triggers.
+-   **`default_webinar_platform`**: (String, optional) Specifies the default webinar platform to use (e.g., "Zoom Webinar", "GoToWebinar"). Default is "Zoom Webinar".
+-   **`api_keys`**: (Dictionary, required) Contains API keys for integrated platforms.
+    -   `zoom_api_key`: (String) API key for Zoom Webinar integration.
+    -   `gotowebinar_api_key`: (String) API key for GoToWebinar integration.
+-   **`default_email_sender`**: (String, optional) The default email address from which automated reminders and follow-ups are sent.
+-   **`crm_integration_enabled`**: (Boolean, optional) If true, enables integration with a CRM system (e.g., HubSpot, Salesforce). Default is false.
 
-**Example funnel configuration:**
+Example configuration in your `config.yaml`:
 
-```json
-{
-  "webinar_name": "Tecno Pova 6 Launch",
-  "type": "live",
-  "funnel_stages": [
-    {
-      "stage": "registration",
-      "trigger": "page_visit",
-      "actions": ["capture_lead", "send_confirmation_email"]
-    },
-    {
-      "stage": "reminder_24h",
-      "trigger": "time_before_event",
-      "delay": "24_hours",
-      "actions": ["send_reminder_email", "sms_notification"]
-    },
-    {
-      "stage": "reminder_1h",
-      "trigger": "time_before_event",
-      "delay": "1_hour",
-      "actions": ["send_final_reminder", "calendar_notification"]
-    },
-    {
-      "stage": "post_attended",
-      "trigger": "attended_full",
-      "actions": ["send_thank_you", "send_replay", "offer_discount"]
-    },
-    {
-      "stage": "post_no_show",
-      "trigger": "did_not_attend",
-      "actions": ["send_replay_access", "invite_next_webinar"]
-    }
-  ]
-}
+```yaml
+webinar_automation:
+    default_webinar_platform: "Zoom Webinar"
+    api_keys:
+        zoom_api_key: "YOUR_ZOOM_API_KEY"
+        gotowebinar_api_key: "YOUR_GOTOWEBINAR_API_KEY"
+    default_email_sender: "webinars@yourbrand.com"
+    crm_integration_enabled: true
 ```
-
-## Related Skills
-
--   **`email-sequence`**: For advanced email automation and nurturing sequences.
--   **`lead-scoring`**: To score and prioritize webinar leads based on engagement.
--   **`analytics-dashboard`**: For comprehensive webinar performance tracking.
--   **`content-calendar`**: To schedule and coordinate webinar promotions across channels.
--   **`ai-chatbot-builder`**: To add chatbot support for webinar Q&A and registration assistance.
