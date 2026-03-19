@@ -23,7 +23,7 @@ category: video
 @video-marketing optimize /videos/draft.mp4
 
 # Generate thumbnail
-@video-marketing thumbnail "Pova 6 Review"
+@video-marketing thumbnail "Product X Review"
 
 # Platform reformatting
 @video-marketing reformat youtube --to tiktok
@@ -92,8 +92,8 @@ BODY (3-25 sec):
 "Hour 48: STILL GOING at 8%!"
 
 CTA (25-30 sec):
-"POVA 6. Two days, one charge. Link in bio"
-[Text overlay: "7000mAh Battery"]
+"Product X. Two days, one charge. Link in bio"
+[Text overlay: "Long Battery Life"]
 
 Technical Specs:
 • Duration: 30 seconds
@@ -105,19 +105,19 @@ Technical Specs:
 
 ### YouTube Optimization
 ```
-User: @video-marketing optimize /videos/pova-review-draft.mp4
+User: @video-marketing optimize /videos/product-x-review-draft.mp4
 
 Agent: 🎥 YOUTUBE OPTIMIZATION REPORT
 
 Current Issues:
-❌ Title too generic: "Pova 6 Review"
+❌ Title too generic: "Product X Review"
 ❌ Thumbnail text unreadable at small size
 ❌ Hook at 45 seconds (should be 0-15)
 ❌ No chapters for skip navigation
 ❌ Missing end screen cards
 
 Optimizations:
-✅ New Title: "I Used This Phone for 7 Days Straight... (Pova 6 Review)"
+✅ New Title: "I Used This Product for 7 Days Straight... (Product X Review)"
 ✅ Thumbnail: Large "7000mAh" text, surprised face, arrow pointing to phone
 ✅ New Hook (0-15 sec): "This phone lasted 3 days without charging. I'm not kidding."
 ✅ Chapters added:

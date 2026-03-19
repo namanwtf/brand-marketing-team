@@ -159,7 +159,7 @@ User: @viral-loop-designer campaign "waitlist-launch"
 
 Agent: 🔥 VIRAL WAITLIST CAMPAIGN
 
-Campaign: "Pova 8 Early Access"
+Campaign: "Product X Early Access"
 
 MECHANICS:
 1. Join waitlist with email
@@ -170,7 +170,7 @@ MECHANICS:
    • 10 friends = Guaranteed early access
 
 LANDING PAGE:
-Headline: "Be First to Experience Pova 8"
+Headline: "Be First to Experience Product X"
 Counter: "12,456 people ahead of you"
 CTA: "Skip the line → Share with friends"
 

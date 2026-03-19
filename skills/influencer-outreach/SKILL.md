@@ -23,7 +23,7 @@ category: partnerships
 @influencer-outreach vet @username
 
 # Automate outreach campaign
-@influencer-outreach campaign "Pova 6 Launch"
+@influencer-outreach campaign "Product X Launch"
 
 # Track campaign performance
 @influencer-outreach track --campaign "Spring 2025"
@@ -130,24 +130,24 @@ Agent: 🔍 INFLUENCER ANALYSIS
 
 ### Outreach Campaign
 ```
-User: @influencer-outreach campaign "Pova 7 Launch"
+User: @influencer-outreach campaign "Product X Launch"
 
 Agent: 📧 OUTREACH CAMPAIGN CREATED
 
-Campaign: Pova 7 Launch
+Campaign: Product X Launch
 Budget: $15,000
 Target: 10 tech influencers
 
 Outreach Sequence:
 
 EMAIL 1 (Day 1):
-Subject: Partnership Opportunity - Pova 7 Launch 🚀
+Subject: Partnership Opportunity - Product X Launch 🚀
 
 Hi [Name],
 
-Love your recent review on [specific video]. Your take on battery life testing was spot-on.
+Love your recent review on [specific video]. Your take on [topic] was spot-on.
 
-We're launching Pova 7 (7000mAh battery, 120Hz, under $250) and think your audience would love it.
+We're launching Product X (flagship feature, under $250) and think your audience would love it.
 
 Interested in an exclusive first look?
 
@@ -155,12 +155,12 @@ Best,
 [Your Name]
 
 EMAIL 2 (Day 4, if no reply):
-Subject: Re: Pova 7 - Still interested?
+Subject: Re: Product X - Still interested?
 
 [Follow-up template]
 
 DM TEMPLATE (Instagram):
-Hey [Name]! Big fan of your content. Have a partnership opportunity for Pova 7 launch. Worth $X. Interested? 📱
+Hey [Name]! Big fan of your content. Have a partnership opportunity for Product X launch. Worth $X. Interested? 📱
 
 10 influencers contacted ✓
 Tracking responses... ✓

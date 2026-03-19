@@ -70,19 +70,19 @@ category: pr
 
 ### Press Release
 ```
-User: @pr-distributor write --topic "pova-7-launch"
+User: @pr-distributor write --topic "product-x-launch"
 
 Agent: 📰 PRESS RELEASE GENERATED
 
 FOR IMMEDIATE RELEASE
 
-TECNO UNVEILS POVA 7: THE ULTIMATE GAMING PHONE WITH 7-DAY BATTERY LIFE
+COMPANY UNVEILS PRODUCT X: THE ULTIMATE SOLUTION WITH BREAKTHROUGH FEATURES
 
 Latest flagship delivers unprecedented 7000mAh battery, 120Hz AMOLED display, and flagship performance under $250
 
-[CITY, DATE] — Tecno Mobile today announced the launch of Pova 7, the company's most powerful gaming smartphone to date. Featuring a groundbreaking 7000mAh battery, the Pova 7 delivers up to 7 days of usage on a single charge, addressing the biggest pain point for mobile gamers worldwide.
+[CITY, DATE] — Company today announced the launch of Product X, the company's most innovative solution to date. Featuring groundbreaking technology, Product X delivers exceptional performance, addressing the biggest pain point for users worldwide.
 
-"We listened to our customers. They wanted a phone that could keep up with their gaming lifestyle without hunting for chargers," said [Name], Head of Marketing at Tecno. "Pova 7 doesn't just meet expectations—it obliterates them."
+"We listened to our customers. They wanted a solution that could exceed their expectations," said [Name], Head of Marketing. "Product X doesn't just meet expectations—it obliterates them."
 
 Key Features:
 • 7000mAh battery with 45W fast charging
@@ -91,10 +91,10 @@ Key Features:
 • Up to 16GB RAM + 256GB storage
 • Starting at just $249
 
-The Pova 7 is available starting [Date] on Amazon, Flipkart, and Tecno retail stores.
+Product X is available starting [Date] on major retailers and company stores.
 
-About Tecno:
-Tecno Mobile is a global smartphone brand focused on delivering cutting-edge technology at accessible prices. With over 100 million users worldwide, Tecno is committed to innovation that matters.
+About Company:
+Company is a global brand focused on delivering cutting-edge solutions at accessible prices. With millions of users worldwide, Company is committed to innovation that matters.
 
 Media Contact:
 [Name]
@@ -112,7 +112,7 @@ User: @pr-distributor distribute
 
 Agent: 📡 DISTRIBUTION CAMPAIGN
 
-Press Release: Pova 7 Launch
+Press Release: Product X Launch
 
 TIER 1: MAJOR TECH PUBLICATIONS
 • TechCrunch

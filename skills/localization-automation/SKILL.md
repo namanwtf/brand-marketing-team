@@ -49,35 +49,35 @@ Use this skill when you need to:
 ### Scenario 1: Translate product launch content for multiple markets
 
 ```bash
-localize translate content/pova6_launch/ --source en --targets "hi,ta,bn,te,mr,gu,kn,ml,pa,ur"
+localize translate content/product_launch/ --source en --targets "es,fr,de,it,pt,ja,ko,zh"
 # Agent translates all content files into 10 Indian regional languages
 ```
 
 ### Scenario 2: Adapt campaign creative for specific market
 
 ```bash
-localize adapt campaigns/pova6_hero_banner.jpg --market "India" --check cultural_fit
+localize adapt campaigns/hero_banner.jpg --market "Europe" --check cultural_fit
 # Agent reviews imagery and suggests adaptations for Indian cultural context
 ```
 
 ### Scenario 3: Launch campaign across multiple markets simultaneously
 
 ```bash
-localize campaign launch "Pova6_Gaming_Edition" --markets "India,Nigeria,Kenya,Philippines,Indonesia" --sync true
+localize campaign launch "ProductX_Launch" --markets "US,UK,DE,FR,JP" --sync true
 # Agent coordinates launch timing and ensures all market content is ready
 ```
 
 ### Scenario 4: Create product terminology glossary
 
 ```bash
-localize glossary create "Tecno Pova 6" --languages "hi,ta,bn,te,mr"
+localize glossary create "Product X" --languages "es,fr,de,it,pt"
 # Agent creates standardized terminology for product features and specs
 ```
 
 ### Scenario 5: Optimize content for local search
 
 ```bash
-localize seo optimize content/pova6_product_page.html --market "India" --keywords "best gaming phone under 15000,6000mah battery phone"
+localize seo optimize content/product_page.html --market "Global" --keywords "best product,affordable solution"
 # Agent adapts content with local keywords and search intent
 ```
 

@@ -49,14 +49,14 @@ Use this skill when you need to:
 ### Scenario 1: Set up comprehensive brand monitoring
 
 ```bash
-crisis monitor "Tecno Mobile" --channels "twitter,facebook,instagram,reddit,news,youtube,play_store" --alert_threshold 0.3
+crisis monitor "Brand Name" --channels "twitter,facebook,instagram,reddit,news,youtube" --alert_threshold 0.3
 # Agent sets up monitoring and will alert when sentiment drops below threshold
 ```
 
 ### Scenario 2: Check for active crisis alerts
 
 ```bash
-crisis alert check "Tecno Mobile"
+crisis alert check "Brand Name"
 # Agent reports any active alerts requiring attention with severity levels
 ```
 

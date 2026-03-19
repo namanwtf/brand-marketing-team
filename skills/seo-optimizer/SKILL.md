@@ -26,7 +26,7 @@ category: seo
 @seo-optimizer audit website
 
 # Track rankings
-@seo-optimizer track "tecno pova 6"
+@seo-optimizer track "product x"
 
 # Generate meta tags
 @seo-optimizer meta product-page
@@ -93,7 +93,7 @@ Add video review for featured snippet
 
 ### Page Optimization
 ```
-User: @seo-optimizer optimize /products/pova-6
+User: @seo-optimizer optimize /products/product-x
 
 Agent: 🔧 ON-PAGE OPTIMIZATION
 
@@ -104,9 +104,9 @@ Current Issues:
 ❌ Images missing alt text
 
 Optimized Version:
-✅ Title: "Pova 6 Gaming Phone | 7000mAh Battery | Under $200" (58 chars)
-✅ H1: "Pova 6: The Ultimate Gaming Phone for Budget Buyers"
-✅ Meta: "Experience 2-day battery life with Pova 6. 120Hz display, 7000mAh, under $200. Free shipping. Shop now!" (155 chars)
+✅ Title: "Product X Gaming Device | Long Battery | Under $200" (58 chars)
+✅ H1: "Product X: The Ultimate Gaming Device for Budget Buyers"
+✅ Meta: "Experience 2-day battery life with Product X. Premium display, long battery, under $200. Free shipping. Shop now!" (155 chars)
 ✅ Alt text added to 12 images
 
 Expected Impact:

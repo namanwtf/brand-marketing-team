@@ -74,7 +74,7 @@ User: @content-calendar plan --month april --goal "product-launch"
 
 Agent: 📅 APRIL CONTENT CALENDAR
 
-Theme: Pova 7 Launch
+Theme: Product X Launch
 
 Week 1 (Apr 1-7): TEASER PHASE
 Mon: Mystery countdown (Instagram Story)
