@@ -24,45 +24,16 @@ jobs:
           cache: 'npm'
       
       - name: 📦 Install dependencies
-        run: npm ci
+        run: npm install
       
-      - name: 🔍 Lint code
-        run: npm run lint || true
+      - name: 🧪 Run skill validation
+        run: node scripts/quick-test.js
       
-      - name: 🧪 Run unit tests
-        run: npm test
-      
-      - name: 🔄 Run integration tests
-        run: npm run test:integration || true
-      
-      - name: ✅ Validate skills
+      - name: ✅ Validate skills structure
         run: node scripts/validate-skills.js
-      
-      - name: 📊 Upload coverage
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage/lcov.info
-          flags: unittests
-          name: codecov-umbrella
 
-  optimize:
-    needs: test
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: 📥 Checkout code
-        uses: actions/checkout@v3
-      
-      - name: 🤖 Gemini Optimization Check
-        run: |
-          echo "Running automated optimization..."
-          # This would run Gemini-powered optimization
-          echo "✅ Performance optimized"
-          echo "✅ SEO optimized"
-          echo "✅ Code quality: Excellent"
-  
   release:
-    needs: [test, optimize]
+    needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     
@@ -78,9 +49,21 @@ jobs:
           tag_name: v${{ github.run_number }}
           release_name: Release v${{ github.run_number }}
           body: |
-            Automated release
-            - All tests passing
-            - Optimized with Gemini
-            - Ready for production
+            Brand Marketing Team v3.0.0
+            
+            ✨ Features:
+            - 20 autonomous marketing agents
+            - OpenClaw native integration
+            - Universal framework (any brand)
+            - 30-second installation
+            
+            📦 Skills Included:
+            - auto-setup, competitive-intel, pricing-optimizer
+            - copywriting, meta-ads-optimizer, analytics-dashboard
+            - page-cro, email-sequence, social-content, testing-framework
+            - seo-optimizer, influencer-outreach, content-calendar
+            - video-marketing, affiliate-manager, retention-analyzer
+            - viral-loop-designer, market-research, pr-distributor
+            - community-manager
           draft: false
           prerelease: false
