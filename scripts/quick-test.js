@@ -24,7 +24,17 @@ const skills = [
   'page-cro',
   'email-sequence',
   'social-content',
-  'testing-framework'
+  'testing-framework',
+  'seo-optimizer',
+  'influencer-outreach',
+  'content-calendar',
+  'video-marketing',
+  'affiliate-manager',
+  'retention-analyzer',
+  'viral-loop-designer',
+  'market-research',
+  'pr-distributor',
+  'community-manager'
 ];
 
 let passed = 0;
