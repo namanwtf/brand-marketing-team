@@ -1,8 +1,8 @@
 ---
 name: page-cro
 description: Landing page conversion rate optimization
-author: Brand Marketing Team
-version: 2.0.0
+author: "@namanwtf"
+version: 3.0.0
 requires: brand-context, copywriting, marketing-psychology
 category: cro
 ---

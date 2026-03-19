@@ -1,8 +1,8 @@
 ---
 name: testing-framework
 description: Automated testing and validation for all marketing skills
-author: Brand Marketing Team
-version: 1.0.0
+author: "@namanwtf"
+version: 3.0.0
 category: devops
 ---
 

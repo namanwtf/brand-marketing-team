@@ -1,8 +1,8 @@
 ---
 name: analytics-dashboard
 description: Competitor tracking dashboard with automated reports
-author: Brand Marketing Team
-version: 2.0.0
+author: "@namanwtf"
+version: 3.0.0
 requires: brand-context, competitive-intel
 category: analytics
 ---
