@@ -1,0 +1,40 @@
+{
+  "name": "brand-marketing-team",
+  "version": "3.0.0",
+  "description": "Complete AI Marketing Department for OpenClaw - 10 autonomous agents for competitive intel, pricing, copywriting, ads, and more",
+  "author": "@namanwtf",
+  "license": "MIT",
+  "homepage": "https://github.com/namanwtf/brand-marketing-team",
+  "repository": "https://github.com/namanwtf/brand-marketing-team.git",
+  "skills": [
+    "auto-setup",
+    "competitive-intel",
+    "pricing-optimizer",
+    "copywriting",
+    "meta-ads-optimizer",
+    "analytics-dashboard",
+    "page-cro",
+    "email-sequence",
+    "social-content",
+    "testing-framework"
+  ],
+  "install": {
+    "command": "npm install",
+    "setup": "npm run setup"
+  },
+  "requirements": [
+    "Node.js >= 18.0.0",
+    "OpenClaw >= 1.0.0"
+  ],
+  "tags": [
+    "marketing",
+    "automation",
+    "competitive-intelligence",
+    "pricing",
+    "copywriting",
+    "ads",
+    "analytics",
+    "email",
+    "social-media"
+  ]
+}
