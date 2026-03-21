@@ -4,14 +4,14 @@
 
 **The World's Largest Open-Source AI Marketing Department**
 
-[![Skills](https://img.shields.io/badge/Skills-30-blue)](https://github.com/namanwtf/brand-marketing-team/tree/main/skills)
+[![Skills](https://img.shields.io/badge/Skills-46-blue)](https://github.com/namanwtf/brand-marketing-team/tree/main/skills)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/namanwtf/brand-marketing-team?style=social)](https://github.com/namanwtf/brand-marketing-team/stargazers)
 [![Author](https://img.shields.io/badge/Author-@namanwtf-orange)](https://twitter.com/namanwtf)
 
-**30 Autonomous Marketing Agents | OpenClaw Native | Universal Framework**
+**46 Autonomous Marketing Agents | OpenClaw Native | Universal Framework**
 
-[Installation](#installation) • [Documentation](#documentation) • [Skills](#all-30-skills) • [Contributing](#contributing)
+[Installation](#installation) • [Documentation](#documentation) • [Skills](#all-46-skills) • [Contributing](#contributing)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 1. [What is This?](#what-is-this)
 2. [Installation](#installation)
-3. [All 30 Skills](#all-30-skills)
+3. [All 46 Skills](#all-46-skills)
 4. [Quick Start](#quick-start)
 5. [Documentation](#documentation)
 6. [Architecture](#architecture)
@@ -34,11 +34,11 @@
 
 ## What is This?
 
-Brand Marketing Team is the **world's most comprehensive open-source AI marketing framework**. It deploys 30 autonomous agents that handle every aspect of marketing—from competitive intelligence to viral growth.
+Brand Marketing Team is the **world's most comprehensive open-source AI marketing framework**. It deploys 46 autonomous agents that handle every aspect of marketing—from competitive intelligence to viral growth.
 
 ### Key Features
 
-- 🎯 **30 Specialized Agents** - Each masters one marketing discipline
+- 🎯 **46 Specialized Agents** - Each masters one marketing discipline
 - 🤖 **Autonomous Operation** - Works 24/7 without manual intervention
 - ⚡ **OpenClaw Native** - Designed specifically for OpenClaw integration
 - 🌐 **Universal** - Works for any brand, any industry, any market
@@ -52,7 +52,7 @@ Brand Marketing Team is the **world's most comprehensive open-source AI marketin
 ### Option 1: OpenClaw (Recommended - 30 seconds)
 
 ```bash
-# Install all 30 skills at once
+# Install all 46 skills at once
 openclaw skills install https://github.com/namanwtf/brand-marketing-team
 
 # Activate
@@ -77,52 +77,76 @@ npx brand-marketing-team init my-brand
 
 ---
 
-## All 30 Skills
+## All 46 Skills
 
-### Core Marketing (10)
+### Core Marketing (16)
 
 | Skill | Command | Purpose |
 |-------|---------|---------|
-| **auto-setup** | `@auto-setup init` | 60-second brand discovery |
-| **competitive-intel** | `@competitive-intel watch` | 24/7 competitor monitoring |
-| **pricing-optimizer** | `@pricing-optimizer analyze` | Dynamic pricing recommendations |
-| **copywriting** | `@copywriting create` | Brand-voice conversion copy |
-| **meta-ads-optimizer** | `@meta-ads-optimizer launch` | Meta Ads automation |
+| **affiliate-manager** | `@affiliate-manager setup` | Affiliate program automation |
 | **analytics-dashboard** | `@analytics-dashboard view` | Performance tracking |
-| **page-cro** | `@page-cro optimize` | Landing page optimization |
+| **auto-setup** | `@auto-setup init` | 60-second brand discovery |
+| **community-manager** | `@community-manager setup` | Discord/Reddit management |
+| **competitive-intel** | `@competitive-intel watch` | 24/7 competitor monitoring |
+| **content-calendar** | `@content-calendar plan` | Automated scheduling |
+| **copy-editing** | `@copy-editing edit` | Grammar and style optimization |
+| **copywriting** | `@copywriting create` | Brand-voice conversion copy |
+| **crisis-manager** | `@crisis-manager monitor` | Brand reputation protection |
 | **email-sequence** | `@email-sequence create` | Lifecycle email automation |
+| **market-research** | `@market-research survey` | Customer insights & surveys |
+| **meta-ads-optimizer** | `@meta-ads-optimizer launch` | Meta Ads automation |
+| **pr-distributor** | `@pr-distributor write` | Press releases & media outreach |
 | **social-content** | `@social-content schedule` | Multi-platform content |
 | **testing-framework** | `@testing-framework run` | Quality assurance |
-
-### Advanced Growth (10)
-
-| Skill | Command | Purpose |
-|-------|---------|---------|
-| **seo-optimizer** | `@seo-optimizer research` | Search ranking optimization |
-| **influencer-outreach** | `@influencer-outreach find` | Creator discovery & management |
-| **content-calendar** | `@content-calendar plan` | Automated scheduling |
 | **video-marketing** | `@video-marketing script` | TikTok/Reels/YouTube content |
-| **affiliate-manager** | `@affiliate-manager setup` | Affiliate program automation |
-| **retention-analyzer** | `@retention-analyzer risk` | Churn prediction & prevention |
-| **viral-loop-designer** | `@viral-loop-designer create` | Referral programs & gamification |
-| **market-research** | `@market-research survey` | Customer insights & surveys |
-| **pr-distributor** | `@pr-distributor write` | Press releases & media outreach |
-| **community-manager** | `@community-manager setup` | Discord/Reddit management |
 
-### AI-Powered (10)
+
+### Advanced Growth (12)
 
 | Skill | Command | Purpose |
 |-------|---------|---------|
-| **ai-chatbot-builder** | `@ai-chatbot-builder create` | Conversational marketing bots |
-| **personalization-engine** | `@personalization-engine setup` | Dynamic content personalization |
+| **case-study-generator** | `@case-study-generator create` | Customer success stories |
+| **influencer-outreach** | `@influencer-outreach find` | Creator discovery & management |
+| **lead-scoring** | `@lead-scoring analyze` | AI-powered lead qualification |
+| **localization-automation** | `@localization-automation translate` | Multi-language scaling |
+| **partnership-scout** | `@partnership-scout find` | Strategic partner discovery |
 | **predictive-analytics** | `@predictive-analytics forecast` | Trend & demand forecasting |
+| **pricing-optimizer** | `@pricing-optimizer analyze` | Dynamic pricing recommendations |
+| **retention-analyzer** | `@retention-analyzer risk` | Churn prediction & prevention |
+| **seo-optimizer** | `@seo-optimizer research` | Search ranking optimization |
+| **viral-loop-designer** | `@viral-loop-designer create` | Referral programs & gamification |
 | **voice-search-optimizer** | `@voice-search-optimizer optimize` | Alexa/Siri/Google optimization |
 | **webinar-automation** | `@webinar-automation create` | Automated webinar funnels |
-| **case-study-generator** | `@case-study-generator create` | Customer success stories |
-| **partnership-scout** | `@partnership-scout find` | Strategic partner discovery |
-| **crisis-manager** | `@crisis-manager monitor` | Brand reputation protection |
-| **localization-automation** | `@localization-automation translate` | Multi-language scaling |
-| **lead-scoring** | `@lead-scoring analyze` | AI-powered lead qualification |
+
+
+### AI-Powered Marketing (12)
+
+| Skill | Command | Purpose |
+|-------|---------|---------|
+| **ad-creative** | `@ad-creative generate` | AI-driven ad copy and visuals |
+| **ai-chatbot-builder** | `@ai-chatbot-builder create` | Conversational marketing bots |
+| **ai-seo** | `@ai-seo optimize` | AI-powered search engine optimization |
+| **campaign-orchestrator** | `@campaign-orchestrator manage` | AI-driven campaign management |
+| **competitor-content-monitor** | `@competitor-content-monitor track` | AI-powered content monitoring |
+| **content-multiplier** | `@content-multiplier expand` | AI-driven content repurposing |
+| **lead-magnet-creator** | `@lead-magnet-creator build` | AI-generated lead magnets |
+| **personalization-engine** | `@personalization-engine setup` | Dynamic content personalization |
+| **pricing-psychology** | `@pricing-psychology analyze` | Behavioral pricing optimization |
+| **seo-audit** | `@seo-audit run` | Comprehensive AI SEO audits |
+| **trend-hijacker** | `@trend-hijacker identify` | AI-powered trend analysis & exploitation |
+| **viral-predictor** | `@viral-predictor forecast` | AI-driven viral content prediction |
+
+
+### Conversion Rate Optimization (CRO) (6)
+
+| Skill | Command | Purpose |
+|-------|---------|---------|
+| **form-cro** | `@form-cro optimize` | Form conversion optimization |
+| **onboarding-cro** | `@onboarding-cro improve` | User onboarding flow optimization |
+| **page-cro** | `@page-cro optimize` | Landing page conversion optimization |
+| **paywall-upgrade-cro** | `@paywall-upgrade-cro convert` | Paywall and upgrade flow optimization |
+| **popup-cro** | `@popup-cro design` | Popup conversion optimization |
+| **signup-flow-cro** | `@signup-flow-cro streamline` | Signup process optimization |
 
 ---
 
@@ -181,17 +205,21 @@ View skill docs: `/skills/[skill-name]/SKILL.md`
 
 ```
 Brand Marketing Team
-├── Core Layer (10 skills)
+├── Core Marketing (16 skills)
 │   ├── auto-setup
 │   ├── competitive-intel
 │   └── ...
-├── Advanced Layer (10 skills)
+├── Advanced Growth (12 skills)
 │   ├── seo-optimizer
 │   ├── influencer-outreach
 │   └── ...
-└── AI Layer (10 skills)
-    ├── ai-chatbot-builder
-    ├── predictive-analytics
+├── AI-Powered Marketing (12 skills)
+│   ├── ai-chatbot-builder
+│   ├── personalization-engine
+│   └── ...
+└── Conversion Rate Optimization (CRO) (6 skills)
+    ├── form-cro
+    ├── onboarding-cro
     └── ...
 ```
 
