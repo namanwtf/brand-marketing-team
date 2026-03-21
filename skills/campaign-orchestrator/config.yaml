@@ -1,0 +1,39 @@
+campaigns:
+  - id: product_x_launch_2026
+    name: "XProduct Launch Campaign"
+    duration_weeks: 4
+    channels:
+      instagram:
+        budget_allocation: 0.6
+        skills_involved: [trend_hijacker, viral_predictor]
+        targets: ["young professionals", "tech enthusiasts"]
+      linkedin:
+        budget_allocation: 0.3
+        skills_involved: [lead_magnet_creator]
+        targets: ["marketing managers", "product managers"]
+      email:
+        budget_allocation: 0.1
+        list_segment: "early_adopters"
+    objectives:
+      - metric: "website_traffic"
+        target: 10000
+        period: "weekly"
+      - metric: "leads_generated"
+        target: 500
+        period: "campaign"
+  - id: summer_sales_2026
+    name: "Summer Sales Promotion"
+    duration_weeks: 2
+    channels:
+      facebook:
+        budget_allocation: 0.7
+        skills_involved: [pricing_psychology]
+        targets: ["past customers", "website visitors"]
+      email:
+        budget_allocation: 0.3
+        list_segment: "loyal_customers"
+    objectives:
+      - metric: "sales_revenue"
+        target: 50000
+        period: "campaign"
+        

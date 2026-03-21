@@ -1,0 +1,22 @@
+trend_sources:
+  - twitter
+  - reddit
+  - tiktok
+  - google_trends
+  - news_api
+
+monitoring:
+  scan_interval_minutes: 30
+  min_velocity_threshold: 100  # % growth threshold
+
+filters:
+  excluded_keywords: ["controversial", "political", "nsfw"]
+  required_sentiment: "positive"
+
+target_audiences:
+  gen_z:
+    age_range: "18-26"
+    interests: ["tech", "sustainability", "creativity"]
+  young_professionals:
+    age_range: "25-35"
+    interests: ["productivity", "design", "finance"]
