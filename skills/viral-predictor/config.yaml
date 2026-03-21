@@ -1,0 +1,31 @@
+prediction_models:
+  instagram_reels:
+    factors:
+      - hook_strength
+      - novelty_score
+      - emotional_resonance
+      - visual_appeal
+      - timing_factor
+  tiktok:
+    factors:
+      - first_3_seconds
+      - music_trend_fit
+      - comment_potential
+      - shareability
+      - completion_rate_estimate
+  twitter:
+    factors:
+      - headline_hook
+      - thread_structure
+      - visual_inclusion
+      - controversy_balance
+
+training_data:
+  historical_posts: 10000
+  viral_threshold: "top_1_percent_engagement"
+  update_frequency: "weekly"
+
+scoring:
+  threshold_high: 80
+  threshold_medium: 50
+  threshold_low: 30

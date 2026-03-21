@@ -1,0 +1,26 @@
+lead_magnet_types:
+  ebook:
+    min_pages: 20
+    max_pages: 100
+    output_formats: ["pdf", "epub", "html"]
+  template:
+    types: ["spreadsheet", "document", "checklist", "workflow"]
+    output_formats: ["xlsx", "docx", "pdf"]
+  calculator:
+    input_limit: 10
+    complexity: "medium"
+    output: "web_embed"
+
+branding:
+  primary_color: "#1E90FF"
+  secondary_color: "#FF4500"
+  logo_path: "assets/logo.png"
+  font_family: "Inter"
+  compliance_note: "Include privacy policy link"
+
+distribution:
+  landing_page_template: "templates/lead_magnet_lp.html"
+  email_sequence:
+    - immediate: "Thank you + download link"
+    - day_3: "Follow-up value content"
+    - day_7: "Soft product pitch"
