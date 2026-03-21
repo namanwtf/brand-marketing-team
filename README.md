@@ -5,7 +5,7 @@
 **The World's Largest Open-Source AI Marketing Department**
 
 [![Skills](https://img.shields.io/badge/Skills-30-blue)](https://github.com/namanwtf/brand-marketing-team/tree/main/skills)
-[![License](https://img.shields.io/badge/License-BMTL--1.0-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/namanwtf/brand-marketing-team?style=social)](https://github.com/namanwtf/brand-marketing-team/stargazers)
 [![Author](https://img.shields.io/badge/Author-@namanwtf-orange)](https://twitter.com/namanwtf)
 
@@ -270,31 +270,36 @@ git push origin feature/amazing-skill
 
 ## License & Attribution
 
-### Brand Marketing Team License (BMTL-1.0)
+### Apache License 2.0
 
-This software is licensed under **BMTL-1.0** (Brand Marketing Team License).
+Copyright 2026 namanwtf
 
-**You CAN:**
+This software is licensed under the **Apache License 2.0**.
+
+**What this means:**
 - ✅ Use commercially
 - ✅ Modify
 - ✅ Distribute
 - ✅ Sublicense
-- ✅ Sell
+- ✅ Patent protection included
 
-**You MUST:**
-- 📝 **Give Attribution** - Credit @namanwtf prominently
-- 📝 **Preserve Copyright** - Include license in all copies
-- 📝 **Document Changes** - Note what you modified
+**Requirements:**
+- 📝 **Include License** - Copy of Apache 2.0 license
+- 📝 **Include NOTICE** - See [NOTICE](NOTICE) file for attribution requirements
+- 📝 **State Changes** - Document any modifications you make
 
-**Full License:** [LICENSE](LICENSE)
+### Attribution
 
-### Attribution Template
+While Apache 2.0 doesn't require it, we appreciate attribution to support the project:
 
 ```
 Powered by Brand Marketing Team
 Created by @namanwtf (https://github.com/namanwtf)
 Original: https://github.com/namanwtf/brand-marketing-team
 ```
+
+**Full License:** [LICENSE](LICENSE)  
+**Attribution Notice:** [NOTICE](NOTICE)
 
 ---
 
