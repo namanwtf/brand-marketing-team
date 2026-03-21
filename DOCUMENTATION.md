@@ -57,7 +57,7 @@ All 30 skills have detailed documentation:
 - [Testing](README.md#documentation)
 
 ### 📋 Legal & Attribution
-- **[LICENSE](LICENSE)** - BMTL-1.0 (Attribution Required)
+- **[LICENSE](LICENSE)** - Apache License 2.0
 - [Attribution Requirements](LICENSE)
 - [How to Credit](LICENSE#attribution-requirement)
 
@@ -69,7 +69,7 @@ All 30 skills have detailed documentation:
 ### 📊 Project Stats
 - **Total Skills:** 30
 - **Version:** 3.0.0
-- **License:** BMTL-1.0
+- **License:** Apache License 2.0
 - **Author:** @namanwtf
 - **Repository:** https://github.com/namanwtf/brand-marketing-team
 

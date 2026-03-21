@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "Analyze Lead Capture Form",
+    "command": "/form-cro analyze --form-id=\"lead_gen_form_Q2\"",
+    "expected_output_contains": "Analyzing form lead_gen_form_Q2"
+  },
+  {
+    "name": "Recommend A/B Test for Submit Button",
+    "command": "/form-cro recommend-ab-test --element=\"submit_button\" --current-text=\"Submit\" --proposals=\"Get a Free Quote;Download Now\"",
+    "expected_output_contains": "Recommending A/B tests for submit_button with proposals Get a Free Quote;Download Now"
+  },
+  {
+    "name": "Get Completion Rate for Contact Us Form",
+    "command": "/form-cro get-metrics --form-id=\"contact_us_form\" --metric=\"completion_rate\" --timeframe=\"last_quarter\"",
+    "expected_output_contains": "Retrieving completion_rate for contact_us_form over last_quarter"
+  }
+]

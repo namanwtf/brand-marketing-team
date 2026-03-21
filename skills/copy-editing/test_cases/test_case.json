@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "Edit Landing Page Copy (Persuasive, Energetic)",
+    "command": "/copy-editing edit --text=\"Our product provides great value to customers. It's really good and helps a lot.\" --tone=\"persuasive\" --brand-voice=\"energetic\"",
+    "expected_output_contains": "[EDITED] Our product provides great value to customers. It's really good and helps a lot."
+  },
+  {
+    "name": "Analyze Email Subject Line Impact",
+    "command": "/copy-editing analyze-impact --text=\"Important update for you inside!\" --type=\"email_subject_line\"",
+    "expected_output_contains": "Analyzing impact of 'Important update for you inside!' as email_subject_line"
+  },
+  {
+    "name": "Get Readability Score for Blog Post Excerpt",
+    "command": "/copy-editing get-metrics --text=\"(long blog post excerpt here)\" --metric=\"readability\"",
+    "expected_output_contains": "Retrieving readability for provided text"
+  }
+]

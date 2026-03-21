@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "Analyze Newsletter Signup Exit Intent Popup",
+    "command": "/popup-cro analyze --popup-id=\"newsletter_signup_exit_intent\"",
+    "expected_output_contains": "Analyzing popup newsletter_signup_exit_intent"
+  },
+  {
+    "name": "Suggest A/B Tests for Popup Trigger Timing",
+    "command": "/popup-cro recommend-ab-test --element=\"trigger_timing\" --current-setting=\"10_seconds_delay\" --proposals=\"15_seconds_delay;on_scroll_50_percent;exit_intent\"",
+    "expected_output_contains": "Recommending A/B tests for trigger_timing with proposals 15_seconds_delay;on_scroll_50_percent;exit_intent"
+  },
+  {
+    "name": "Get Conversion Rate for Popups on Pricing Page",
+    "command": "/popup-cro get-metrics --page-url=\"https://example.com/pricing\" --metric=\"conversion_rate\" --timeframe=\"last_month\"",
+    "expected_output_contains": "Retrieving conversion_rate for popups on https://example.com/pricing over last_month"
+  }
+]

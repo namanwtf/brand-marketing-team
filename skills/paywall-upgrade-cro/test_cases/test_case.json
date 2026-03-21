@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "Analyze Premium Feature Paywall",
+    "command": "/paywall-upgrade-cro analyze --page-id=\"premium_feature_paywall\"",
+    "expected_output_contains": "Analyzing paywall/upgrade page premium_feature_paywall"
+  },
+  {
+    "name": "Recommend A/B Tests for Pricing Tiers",
+    "command": "/paywall-upgrade-cro recommend-ab-test --element=\"pricing_tiers\" --current-layout=\"3_tiers_monthly_yearly\" --proposals=\"2_tiers_quarterly_yearly;feature_based_tiers\"",
+    "expected_output_contains": "Recommending A/B tests for pricing_tiers with proposals 2_tiers_quarterly_yearly;feature_based_tiers"
+  },
+  {
+    "name": "Get Conversion Rate for Pro Plan Discount Offer",
+    "command": "/paywall-upgrade-cro get-metrics --offer-id=\"pro_plan_discount\" --metric=\"conversion_rate\" --timeframe=\"last_60_days\"",
+    "expected_output_contains": "Retrieving conversion_rate for offer pro_plan_discount over last_60_days"
+  }
+]
