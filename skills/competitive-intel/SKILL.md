@@ -1,234 +1,253 @@
 ---
-name: competitive-intel
-description: 24/7 competitor monitoring with real-time alerts
-author: "@namanwtf"
-version: 3.0.0
-requires: brand-context
-category: intelligence
+summary: "Automated competitive intelligence for the Indian smartphone market focusing on the under ₹30k segment."
+description: "Tracks Google Trends, performs anomaly detection, and generates daily competitive reports for Tecno/Pova against key competitors like Samsung, Vivo, Motorola, Infinix, Realme, and Redmi. Emphasizes products under ₹30,000."
+requirements:
+  - Brave Search API
+  - Browser CLI for Google Trends
+  - Telegram/Discord for alerts
+configuration:
+  keywords_tracked:
+    tecno: ["tecno pova curve 2", "tecno pova 7", "tecno pova 7 pro", "tecno pova slim", "tecno spark go 3", "tecno spark go 5g", "tecno camon 30 series"]
+    primary_competitors: ["samsung galaxy a35", "samsung galaxy a55", "samsung galaxy m series", "vivo t3", "vivo v series", "vivo y under-30k", "vivo v30e", "vivo v29e"]
+    secondary_competitors: ["motorola edge 50", "motorola edge 70 fusion", "infinix gt 30", "infinix note 50s", "infinix note edge"]
+    tracked_for_learning: ["realme 12 series", "realme 13 series", "redmi note 13 series", "poco x6", "poco m6", "oppo a79", "oppo a58"]
+  geographic_focus: "India (geo=IN)"
+  price_threshold: "under ₹30,000"
+  windows: ["7-day", "12-month", "5-year"]
+  anomaly_thresholds:
+    spike_critical: 80
+    critical_drop: -50
+    notify_immediately: true
+    silent_if_normal: true
+usage:
+  hourly_check: "Check 7-day trends for all keywords; alert if >50% spike or >30% drop on any under-30k product."
+  daily_report: "Generate full analysis focusing on under-30k products."
+  manual_deep_dive: "Analyze specific competitor patterns (e.g., Samsung A-series, M-series)."
+outputs:
+  hourly: "Anomaly alerts with cause, threat level, and suggested action."
+  daily: "Comprehensive report with brand rankings, under-₹30k threats, tracked learnings, and recommended actions."
+intelligence_priorities:
+  primary: "Samsung (A-series, M-series), Vivo (T-series, V-series)"
+  secondary: "Motorola (Edge 50/70 Fusion), Infinix (GT 30, Note 50s, Note Edge)"
+  tracked: "Realme (12/13 series), Redmi (Note 13 series), Poco (X6/M6)"
+  ignore: "OnePlus, iPhone, Pixel (unless dropping under ₹30k)"
+file_management:
+  input: ["MEMORY.md", "Google Trends data", "Web search results"]
+  output: ["memory/2026-MM-DD-competitive-intel.md", "deliverables/competitive-intel-report-YYYYMMDD.md"]
+corrections:
+  products_status:
+    pova_curve_2: {status: "LIVE", price: "₹27,999-29,999", priority: "PRIMARY (defend)"}
+    pova_7_series: {status: "Live", price: "₹30k+", priority: "Secondary"}
+    infinix_gt_30: {status: "IN MARKET", price: "₹24,999", priority: "PRIMARY (threat)"}
+    samsung_a35_a55: {status: "Live", price: "₹27,999-30k+", priority: "PRIMARY (threat)"}
+    vivo_t3: {status: "Launching", price: "₹29,999", priority: "PRIMARY (threat)"}
+    motorola_edge_70: {status: "Launching Mar", price: "₹30k expected", priority: "Track if undercuts"}
+  competitive_reality: "Curve 2 and GT 30 are active in the market. Real competition is Samsung + Vivo. Focus on defending/attacking under ₹30k, learning from all."
+sub_agent_instructions:
+  checking_trends:
+    - "Flag immediately any Samsung/Vivo under-30k spike."
+    - "Analyze why it moved (launch, price cut, campaign)."
+    - "Compare how it threatens Tecno under-30k position."
+    - "Learn what pricing/campaign tactics work."
+  output_format: "🚨 THREAT: [Brand] [Product] @ ₹[Price] — [Why moving]; 📈 LEARNING: [Bigger brand] [Strategy] — applicable to Tecno?; 💡 ACTION: What N should do now"
+created: "March 2, 2026"
+owner: "N's Competitive Intelligence System"
+focus: "Under ₹30k threats | Track all for learning"
 ---
 
-# 🕵️ Competitive Intelligence Agent
+# Competitive Intelligence Agent
 
-**Purpose:** Monitor competitors 24/7, detect price changes, new launches, and marketing moves. Send instant alerts via WhatsApp/Telegram/Slack.
+## Summary
+Automated competitive trend analysis for Tecno/Pova vs all brands (Vivo, Samsung, Motorola, Infinix, Realme, Redmi) in Indian smartphone market. **Primary focus: Under ₹30k segment where Tecno competes.** Tracks Google Trends across 7-day, 12-month, and 5-year windows.
 
----
+## Description
+This agent performs systematic competitive intelligence gathering:
+- **Primary targets**: Samsung, Vivo (big players in under-₹30k)
+- **Secondary threats**: Motorola, Infinix (under ₹30k)
+- **Track all**: Realme, Redmi, Oppo (learning + pattern recognition)
+- **Tecno products**: Pova Curve 2 (LIVE), Pova 7, Spark Go, future launches
 
-## When to Use
-
-```bash
-# Start 24/7 monitoring
-@competitive-intel watch competitor-a competitor-b
-
-# Check specific competitor
-@competitive-intel check competitor-a
-
-# Get daily briefing
-@competitive-intel daily-brief
-
-# Set up price alerts
-@competitive-intel alert when "product-x" < 199
-
-# Generate competitor report
-@competitive-intel report --weekly
-```
-
----
-
-## Capabilities
-
-### 1. Real-Time Price Monitoring
-- Scrapes e-commerce sites and retailer websites
-- Tracks price changes every 30 minutes
-- Detects stock availability changes
-- Monitors promotional offers and discounts
-
-### 2. Launch Detection
-- Watches for new product announcements
-- Monitors certification databases
-- Tracks press releases and news
-- Detects social media teases and leaks
-
-### 3. Smart Alerting
-- WhatsApp notifications for major changes
-- Telegram alerts for daily summaries
-- Slack integration for team alerts
-- Email reports for weekly analysis
-- Only alerts on significant changes (>5% price drop, new launches)
-
-### 4. Historical Analysis
-- Price trend charts
-- Seasonal pattern detection
-- Competitor response tracking
-- Market positioning analysis
-
----
-
-## Usage Examples
-
-### Monitor All Competitors
-```
-User: @competitive-intel watch all
-Agent: Starting 24/7 monitoring for:
-       • Competitor A (Product X, Product Y)
-       • Competitor B (Product Z)
-       • Competitor C (Full range)
-       
-       Alert settings:
-       • Price drop > 10%: Immediate WhatsApp
-       • New launch: Immediate WhatsApp
-       • Daily summary: Telegram at 7 AM
-       • Weekly report: Email every Monday
-```
-
-### Check Specific Product
-```
-User: @competitive-intel check "product-x"
-Agent: 📊 PRODUCT-X STATUS
-       
-       Current Price: $199 (Platform A)
-       Launch Date: March 2025
-       Key Specs: Feature A, Feature B, Feature C
-       
-       Price History:
-       • Mar 1: $229 (launch)
-       • Mar 15: $199 (current, -13%)
-       
-       ⚠️ THREAT ANALYSIS:
-       • Direct competitor to our Product Y
-       • Similar feature set
-       • $30 cheaper than our current pricing
-       
-       RECOMMENDED ACTION:
-       Consider price match or bundle offer.
-```
-
-### Daily Briefing
-```
-User: @competitive-intel daily-brief
-Agent: 🌅 DAILY COMPETITIVE BRIEF - March 20, 2025
-
-       🔴 HIGH PRIORITY:
-       • Competitor A dropped Product X price to $179 (-$20)
-       • Competitor B stock running low on Platform Y
-       
-       🟡 MEDIUM PRIORITY:
-       • Competitor C maintaining current pricing
-       • Competitor D launch buzz building
-       
-       🟢 OPPORTUNITIES:
-       • Competitor A out of stock on Platform B
-       • Competitor C shipping delays reported
-       
-       YOUR POSITION:
-       • Product Y: Price competitive, stock available
-       • Recommendation: Maintain pricing, push availability messaging
-```
-
----
+## Requirements
+- Brave Search API
+- Browser CLI for Google Trends
+- Telegram/Discord for alerts
 
 ## Configuration
 
-Add to your `brand-context.md`:
+### Keywords Tracked (Updated March 2, 2026)
 
+**Tecno (LIVE Products):**
+- tecno pova curve 2 (⚠️ **ALREADY LAUNCHED** under ₹30k)
+- tecno pova 7 / pova 7 pro
+- tecno pova slim
+- tecno spark go 3 / spark go 5g
+- tecno camon 30 series
+
+**Primary Competitors (Under ₹30k FOCUS):**
+- samsung galaxy a35 / a55 / m series
+- vivo t3 / v series / y under-30k
+- vivo v30e / v29e (if under 30k)
+
+**Secondary Competitors (Under ₹30k threats):**
+- motorola edge 50 / edge 70 fusion
+- infinix gt 30 (⚠️ **IN MARKET**)
+- infinix note 50s
+- infinix note edge
+
+**Tracked for Learning:**
+- realme 12 series / 13 series
+- redmi note 13 series
+- poco x6 / m6
+- oppo a79 / a58
+
+### Geographic Focus
+India only (geo=IN)
+
+### Price Threshold
+**Primary**: Products & launches under **₹30,000**
+(Track above-30k only for learning, flag threats only when under-30k)
+
+### Windows
+- **7-day**: Hourly anomaly detection
+- **12-month**: Daily trend analysis  
+- **5-year**: Weekly strategic context
+
+### Anomaly Thresholds
 ```yaml
-competitive-intel:
-  competitors:
-    - name: "Competitor A"
-      products: ["Product X", "Product Y", "Product Z"]
-      priority: "high"
-      platforms: ["platform-a.com", "platform-b.com"]
-    - name: "Competitor B"
-      products: ["Product M", "Product N"]
-      priority: "medium"
-      platforms: ["platform-c.com"]
-  
-  alert-channels:
-    whatsapp: true
-    telegram: true
-    email: false
-    slack: true
-  
-  thresholds:
-    price-drop: 10%      # Alert on >10% price drop
-    price-increase: 5%   # Alert on >5% price increase
-    stock-out: true      # Alert when competitor goes OOS
-    new-launch: true     # Alert on new product launches
-  
-  monitoring:
-    frequency: "30min"   # Check every 30 minutes
-    sources: ["ecommerce", "news", "social", "certifications"]
+spike_critical: 80
+critical_drop: -50
+notify_immediately: true
+silent_if_normal: true
+```
+
+## Usage
+
+### Hourly Check (Automated)
+```
+Check: 7-day trends for all keywords
+Alert if: >50% spike, >30% drop on any under-30k product
+```
+
+### Daily Report
+```
+Session message: "Daily competitive intel report"
+Agent responds with full analysis focusing under-30k
+```
+
+### Manual Deep Dive
+```
+Session message: "Deep dive into Samsung under-30k trends"
+Agent analyzes Samsung A-series, M-series patterns
+```
+
+## Outputs
+
+### Hourly (Anomaly Only)
+```
+🚨 ANOMALY: Samsung A35 searches spiked +60%
+Cause: Price drop to ₹27,999 on Flipkart
+Threat Level: 🔴 HIGH (direct Curve 2 competitor)
+Action: Monitor if sustained, prep comparison content
+```
+
+### Daily (Comprehensive)
+```
+# Competitive Intelligence Report — Under ₹30k Focus
+## Brand Rankings (7-day)
+1. Samsung: 89 (+12%) ← A-series price cuts
+2. Vivo: 67 (+5%) ← T3 buzz
+3. Motorola: 74 (stable)
+4. Infinix: 50 (+8%) ← GT 30 marketing
+5. Tecno: 30 (+3%) ← Curve 2 sustaining
+
+## Under-₹30k Threats This Week
+- Samsung A35 @ ₹27,999 (was ₹30k+) — curve 2 competitor
+- Vivo T3 launch @ ₹29,999 — gaming focus
+- Infinix GT 30 @ ₹24,999 — gaming undercuts
+
+## Tracked for Learning
+- iPhone SE (above 30k, pattern only)
+- OnePlus Nord (above 30k, but pricing strategy learnable)
+- Realme 13 series (under 30k, secondary threat)
+
+## Recommended Actions
+1. Push Curve 2 "8000mAh vs 5000mAh" vs Samsung A35
+2. Watch Vivo T3 gaming reviews — capture GT 30 comparison angle
+3. Monitor if A35 price cut is sustained or flash sale
+```
+
+## Intelligence Priorities
+
+### 🔴 PRIMARY (Immediate Threats Under ₹30k)
+| Brand | Focus | Why |
+|-------|-------|-----|
+| **Samsung** | A-series (A35, A55), M-series | Biggest volume player |
+| **Vivo** | T-series (T3), V-series (V29e, V30e) | Strong offline + youth |
+
+### 🟡 SECONDARY (Direct Competitors)
+| Brand | Focus | Why |
+|-------|-------|-----|
+| **Motorola** | Edge 50/70 Fusion | Growing under-30k presence |
+| **Infinix** | GT 30, Note 50s, Note Edge | Aggressive pricing |
+
+### 🟢 TRACKED (Pattern Learning)
+| Brand | Focus | Why |
+|-------|-------|-----|
+| **Realme** | 12 series, 13 series | Pricing strategies |
+| **Redmi** | Note 13 series | Market share shifts |
+| **Poco** | X6, M6 | Performance positioning |
+
+### ⚪ IGNORE (Unless Dropping Under 30k)
+- OnePlus (Nord series if above 30k)
+- iPhone (pattern learning only)
+- Pixel (niche)
+
+## File Management
+
+### Input
+- MEMORY.md (corrected competitor hierarchy)
+- Google Trends data
+- Web search results
+
+### Output
+- `memory/2026-MM-DD-competitive-intel.md`
+- `deliverables/competitive-intel-report-YYYYMMDD.md`
+
+## Key Corrections (March 2, 2026)
+
+### Products Status (UPDATED)
+| Product | Status | Price | Intelligence Priority |
+|---------|--------|-------|----------------------|
+| Pova Curve 2 | **LIVE** | ₹27,999-29,999 | **PRIMARY** (defend) |
+| Pova 7 series | Live | ₹30k+ | Secondary |
+| Infinix GT 30 | **IN MARKET** | ₹24,999 | **PRIMARY** (threat) |
+| Samsung A35/A55 | Live | ₹27,999-30k+ | **PRIMARY** (threat) |
+| Vivo T3 | Launching | ₹29,999 | **PRIMARY** (threat) |
+| Motorola Edge 70 | Launching Mar | ₹30k expected | Track if undercuts |
+
+### Competitive Reality
+- **Curve 2**: Already competing in market (not pre-launch)
+- **GT 30**: Active in market, marketing now
+- **Real competition**: Samsung + Vivo (volume + brand power)
+- **Focus**: Defend/attack under ₹30k, learn from all
+
+## Sub-Agent Instructions
+
+### When Checking Trends:
+1. **Flag immediately**: Any Samsung/Vivo under-30k spike
+2. **Analyze**: Why it moved (launch, price cut, campaign)
+3. **Compare**: How it threatens Tecno under-30k position
+4. **Learn**: What pricing/campaign tactics work (even above 30k)
+
+### Output Format:
+```
+🚨 THREAT: [Brand] [Product] @ ₹[Price] — [Why moving]
+📈 LEARNING: [Bigger brand] [Strategy] — applicable to Tecno?
+💡 ACTION: What N should do now
 ```
 
 ---
 
-## Integration with Other Skills
-
-This skill feeds data to:
-- **pricing-optimizer**: Real-time competitor pricing
-- **copywriting**: Competitor messaging analysis
-- **meta-ads-optimizer**: Competitor ad creative tracking
-- **analytics-dashboard**: Competitive benchmarking
-
----
-
-## Data Sources
-
-- E-commerce platforms (price, stock, reviews)
-- News aggregators (RSS + APIs)
-- Social media monitoring
-- Certification databases
-- Press release trackers
-
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────┐
-│  Competitive Intelligence Agent          │
-├─────────────────────────────────────────┤
-│  Scheduler (node-cron)                  │
-│  ├─ Every 30 min: Price check          │
-│  ├─ Every 6 hours: Launch scan         │
-│  └─ Daily 7 AM: Briefing generation    │
-├─────────────────────────────────────────┤
-│  Scrapers                               │
-│  ├─ E-commerce scrapers (Puppeteer)    │
-│  ├─ News aggregators (RSS + APIs)      │
-│  └─ Social media monitors              │
-├─────────────────────────────────────────┤
-│  Alert System                           │
-│  ├─ WhatsApp (Twilio)                  │
-│  ├─ Telegram (Bot API)                 │
-│  ├─ Slack (Webhooks)                   │
-│  └─ Email (SendGrid/SES)               │
-├─────────────────────────────────────────┤
-│  Database (JSON/CSV)                    │
-│  ├─ Price history                      │
-│  ├─ Launch timeline                    │
-│  └─ Alert log                          │
-└─────────────────────────────────────────┘
-```
-
----
-
-## Safety Guardrails
-
-- ✅ **Respect robots.txt** on all sites
-- ✅ **Rate limiting**: Max 1 request per minute per site
-- ✅ **User-Agent rotation**: Appears as legitimate browser
-- ✅ **Data retention**: Only 90 days of history stored locally
-- ✅ **Privacy**: No customer data scraped, only public pricing
-
----
-
-## Related Skills
-
-- **pricing-optimizer**: Uses competitive data for dynamic pricing
-- **meta-ads-optimizer**: Tracks competitor ad strategies
-- **analytics-dashboard**: Visualizes competitive trends
-
----
-
-*Part of the Brand Marketing Team framework.*
-*Author: @namanwtf | Version 3.0.0 | MIT License*
+**Created:** March 2, 2026
+**Owner:** N's Competitive Intelligence System
+**Focus:** Under ₹30k threats | Track all for learning
